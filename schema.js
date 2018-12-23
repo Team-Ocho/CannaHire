@@ -16,5 +16,5 @@ var connection = mysql.createConnection({
   
   connection.connect(function(err) {
     if (err) throw err;
-    // runSearch(); need to build function for creating new users
+    // notSureWhatToCallIt(); need to build function for creating new users
   });
