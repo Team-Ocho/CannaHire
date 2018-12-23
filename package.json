@@ -1,0 +1,22 @@
+{
+  "name": "cannahire",
+  "version": "1.0.0",
+  "description": "a job posting board for cannabis industry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Ocho/CannaHire.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Team-Ocho/CannaHire/issues"
+  },
+  "homepage": "https://github.com/Team-Ocho/CannaHire#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
