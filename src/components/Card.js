@@ -5,10 +5,10 @@ function Card() {
     return (
         <div className="job-card">
             <h4 classname="job-title">Job Title</h4>
-            <div className = "container">
+            <div>
             <p className="summary">This is a summary of the job.</p>
             <p>Status: Waiting </p>
-            <button className="read=more">View</button>
+            <button className="read-more">View</button>
             </div>
         </div>
     );

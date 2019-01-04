@@ -31,6 +31,14 @@ const LoginNav = () => (
         Dashboard
       </Link>
       <Link
+        to="/learn"
+        className={
+          window.location.pathname === "/learn" ? "nav-link active" : "nav-link"
+        }
+      >
+        Learn
+        </Link>
+      <Link
         to="/messages"
         className={
           window.location.pathname === "/messages" ? "nav-link active" : "nav-link"
@@ -39,17 +47,17 @@ const LoginNav = () => (
         Messages
       </Link>
       <Link
-        to="/blank"
+        to="/saved-posts"
         className={
-          window.location.pathname === "/post-a-job" ? "nav-link active" : "nav-link"
+          window.location.pathname === "/saved-posts" ? "nav-link active" : "nav-link"
         }
       >
         Saved Posts
       </Link>
       <Link
-        to="/post"
+        to="/logout"
         className={
-          window.location.pathname === "/post-a-job" ? "nav-link active" : "nav-link"
+          window.location.pathname === "/logout" ? "nav-link active" : "nav-link"
         }
       >
         Logout

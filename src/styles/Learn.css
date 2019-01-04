@@ -1,21 +1,46 @@
-.article-title {
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
+.newsfeed {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
 
-}
-
-.summary {
-    text-align: left;
-}
-
-.link {
-    text-align: left;
 }
 
 .display-articles {
-    padding-left: 20px;
+    width: 18rem;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+    margin-left: 250px;
+    margin-top: 200px;
+ 
+    
 }
 
-.learn-div {
-    background-color: white;
+.card-article {
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 256px;
+}
+.card-article-right {
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 256px;
+    width: 800px;;
+}
+
+.card-text-right {
+    padding: 10px;
+}
+
+.articles-right{
+    float: right;
+    margin-top: 200px;
+    margin-right: 100px;
+    height: 256px;
 }
