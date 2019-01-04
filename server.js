@@ -4,7 +4,12 @@ require("dotenv").config();
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-var connection = mysql.createConnection({
+var connection;
+
+if (process.env.JAWSDB_URL) {
+   connection = mysql.createConnection(process.env.JAWSDB_URL);
+  } else {
+    connect = mysql.createConnection({
     host: process.env.db_host,
   
     // Your port; if not 3306
@@ -17,6 +22,7 @@ var connection = mysql.createConnection({
     password:  process.env.db_password,
     database: "canna_hire"
   });
+};
   
   connection.connect(function(err) {
     if (err) throw err;
