@@ -1,0 +1,48 @@
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    /* padding: 16px; */
+    text-align: left;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 80%;
+      display: block;
+      /* margin-bottom: 20px; */
+    }
+  }
+
+div .card {
+    text-align: left;
+    width: 80%;
+    margin-left: 240px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.results {
+    text-align: center;
+}
+
+.card-footer {
+    margin-bottom: -20px;
+}
+
+
+.breadcrumbs{
+    color: blue;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.list-group-item {
+  float:right;
+  color: black;
+}
+
+.card :hover {
+ background-color: white;
+}
