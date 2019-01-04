@@ -7,51 +7,58 @@ import Card from "../Card";
 const Dashboard = () => (
 
     <div className="dashboard-main">
-        <ul className="sidenav">
-            <img className="dashboard-logo" src={require('../../assets/logo1.png')}></img>
-            <h3 className="hi">Hi Name!</h3>
-            <Link
-                to="/search-jobs"
-                className={
-                    window.location.pathname === "/search-jobs" ? "nav-link active" : "nav-link"
-                }
-            >
-                Search Jobs
+    <ul className="sidenav">
+      <img className="dashboard-logo" src={require('../../assets/logo1.png')}></img>
+      <h3 className="hi">Hi Name!</h3>
+      <Link
+        to="/search-jobs"
+        className={
+          window.location.pathname === "/search-jobs" ? "nav-link active" : "nav-link"
+        }
+      >
+        Search Jobs
+      </Link>
+      <Link
+        to="/dashboard"
+        className={
+          window.location.pathname === "/dashboard" ? "nav-link active" : "nav-link"
+        }
+      >
+        Dashboard
+      </Link>
+      <Link
+        to="/learn"
+        className={
+          window.location.pathname === "/learn" ? "nav-link active" : "nav-link"
+        }
+      >
+        Learn
         </Link>
-            <Link
-                to="/dashboard"
-                className={
-                    window.location.pathname === "/dashboard" ? "nav-link active" : "nav-link"
-                }
-            >
-                Dashboard
-        </Link>
-            <Link
-                to="/messages"
-                className={
-                    window.location.pathname === "/messages" ? "nav-link active" : "nav-link"
-                }
-            >
-                Messages
-        </Link>
-            <Link
-                to="/post"
-                className={
-                    window.location.pathname === "/post-a-job" ? "nav-link active" : "nav-link"
-                }
-            >
-                Saved Posts
-        </Link>
-            <Link
-                to="/post"
-                className={
-                    window.location.pathname === "/post-a-job" ? "nav-link active" : "nav-link"
-                }
-            >
-                Logout
-        </Link>
-        </ul>
-
+      <Link
+        to="/messages"
+        className={
+          window.location.pathname === "/messages" ? "nav-link active" : "nav-link"
+        }
+      >
+        Messages
+      </Link>
+      <Link
+        to="/saved-posts"
+        className={
+          window.location.pathname === "/saved-posts" ? "nav-link active" : "nav-link"
+        }
+      >
+        Saved Posts
+      </Link>
+      <Link
+        to="/logout"
+        className={
+          window.location.pathname === "/logout" ? "nav-link active" : "nav-link"
+        }
+      >
+        Logout
+      </Link>
+    </ul>
         <div className="dashboard">
             <div class="w3-row">
                 <div class=" w3-container w3-quarter">
