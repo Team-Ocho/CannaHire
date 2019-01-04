@@ -59,78 +59,55 @@ const Dashboard = () => (
         Logout
       </Link>
     </ul>
-        <div className="dashboard">
-            <div class="w3-row">
-                <div class=" w3-container w3-quarter">
-                </div>
-                <div class="w3-container w3-quarter">
-                    <h2 className = "your-dashboard">Your Dashboard</h2>
-                </div>
-            </div>
+    <div className="container container-dashboard">
+      <div className="row">
+        <div className="col-12 text-center">
+          <h2 className="your-dashboard">Your Dashboard</h2>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-12 ">
+          <h3 className="your-jobs text-center">Jobs You've Applied To</h3>
+          <h6>This Week</h6>
         </div>
 
-        <div className="applied-jobs">
-            <div class="w3-row">
-                <div class=" w3-container w3-quarter">
-                </div>
-                <div class="w3-container w3-quarter">
-                    <h3 className = "your-jobs">Jobs You've Applied To</h3>
-                    <h5>This Week</h5>
-                </div>
-
-            </div>
+      </div>
+      <div className="row">
+        <div className="col-4">
+          <Card />
+        </div>
+        <div className="col-4">
+          <Card />
+        </div>
+        <div className="col-4">
+          <Card />
+          <a href="#" className="view-all">View All</a>
         </div>
 
-        <div className="list-applied-jobs">
-        <div class="w3-row">
-                <div class="w3-container w3-quarter">
-                </div>
-                <div class="w3-container w3-quarter">
-                <Card />
-                </div>
-                <div class="w3-container w3-quarter">
-                <Card />
-                </div>
-                <div class="w3-container w3-quarter">
-                <Card />
-                <a href="#"className="view-all">View All</a>
-                </div>
-             
-        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <h6>Past</h6>
         </div>
 
-        <div className="past-jobs">
-            <div class="w3-row">
-                <div class=" w3-container w3-quarter">
-                </div>
-                <div class="w3-container w3-quarter">
-                    <h5>Past</h5>
-                </div>
-
-            </div>
+      </div>
+      <div className="row">
+        <div className="col-4">
+          <Card />
+        </div>
+        <div className="col-4">
+          <Card />
+        </div>
+        <div className="col-4">
+          <Card />
+          <a href="#" className="view-all">View All</a>
         </div>
 
-        <div className="list-applied-jobs">
-        <div class="w3-row">
-                <div class="w3-container w3-quarter">
-                </div>
-                <div class="w3-container w3-quarter">
-                <Card />
-                </div>
-                <div class="w3-container w3-quarter">
-                <Card />
-                </div>
-                <div class="w3-container w3-quarter">
-                <Card />
-                <a href="#"className="view-all">View All</a>
-                </div>
-                
-        </div>
-        </div>
-
-
+      </div>
 
     </div>
+  </div>
 );
 
 export default Dashboard

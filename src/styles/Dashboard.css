@@ -1,26 +1,8 @@
-.your-jobs {
-    margin-left: -150px;
-    margin-top: -50px;
-}
+.container-dashboard {
+    margin-left: 240px;
+  }
 
-
-.your-dashboard {
-    margin-top: 10px;
-    margin-left: -150px;
-}
-
-.list-applied-jobs {
-    margin-top: -100px;
-}
-
-h5 {
-    margin-left: -150px;
-    text-decoration-line: underline;
-    font-size: 15px;
-
-}
-
-.past-jobs {
-    margin-top: -50px;
-}
-
+  .your-dashboard {
+    font-size: 60px;
+    margin-top: 20px;
+  }
