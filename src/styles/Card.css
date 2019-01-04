@@ -1,0 +1,10 @@
+.job-card {
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+    margin-left: -150px;
+    margin-right: 150px;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 20px;
+}
