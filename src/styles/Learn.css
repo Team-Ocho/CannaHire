@@ -1,0 +1,21 @@
+.article-title {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.summary {
+    text-align: left;
+}
+
+.link {
+    text-align: left;
+}
+
+.display-articles {
+    padding-left: 20px;
+}
+
+.learn-div {
+    background-color: white;
+}

@@ -1,0 +1,69 @@
+.header {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 150px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    /* font-weight: 600; */
+}
+
+.map-location {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.intro {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+form {
+    height: 20px;
+}
+.logo {
+    height: 70px;
+    width: 70px;
+    margin-top: -70px;
+}
+
+.location {
+    height: 30px;
+    width: 250px;
+}
+
+.search {
+    height: 30px;
+    width: 70px;
+}
+.login {
+    color: blue;
+    background: none;
+    border: none;
+}
+
+.screenshot-images {
+    border-style: solid;
+    border-color: lightslategrey;
+    border-width: 2px;
+    width: 900px;
+    height: 500px;
+}
+
+.screenshots {
+    padding-top: 100px;
+    text-align: center;
+    /* padding-bottom: 100px; */
+}
+
+div {
+    /* background: url("../leaf.jpg") no-repeat center center fixed; */
+    background-size: cover;
+    background-image: linear-gradient(to right, rgb(131, 146, 137) , rgb(7, 111, 45));
+    padding-bottom: 30px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+  
+ 
