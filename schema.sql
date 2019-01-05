@@ -19,7 +19,7 @@ CREATE TABLE job_postings (
     job_posting_id INT AUTO_INCREMENT NOT NULL,
 	job_title varchar(200) NOT NULL,
     salary varchar(200) NOT NULL,
-    job_description varchar(600) NOT NULL,
-    employee_requirements varchar(600) NOT NULL,
+    job_description varchar(2500) NOT NULL,
+    employee_requirements varchar(2500) NOT NULL,
     primary key (job_posting_id)
 );
