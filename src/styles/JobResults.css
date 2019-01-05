@@ -4,6 +4,7 @@
     /* padding: 16px; */
     text-align: left;
     background-color: #f1f1f1;
+    
   }
   
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -19,7 +20,7 @@ div .card {
     text-align: left;
     width: 80%;
     margin-left: 240px;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
     padding-top: 5px;
 }
 
@@ -36,6 +37,7 @@ div .card {
     color: blue;
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .list-group-item {
@@ -43,6 +45,6 @@ div .card {
   color: black;
 }
 
-.card :hover {
+/* .card :hover {
  background-color: white;
-}
+} */

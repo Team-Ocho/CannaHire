@@ -3,9 +3,6 @@ import "../../styles/Home.css";
 import "../../../src/index.css";
 import { Link } from "react-router-dom";
 
-// import NavTabs from "../NavTabs";
-import NavTabs from "../NavTabs";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 
