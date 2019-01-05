@@ -1,11 +1,8 @@
 import React from 'react';
-import "../../styles/Learn.css";
-import Sidebar from "../Sidebar";
 
 
-const Learn = () => (
+const CompanyLearn = () => (
     <div>
-        <Sidebar />
         <div class="container-articles">
             <div class="row">
                 <h1 className="header">Article Thumbnails</h1>
@@ -90,4 +87,4 @@ const Learn = () => (
 
         )
 
-export default Learn
+export default CompanyLearn

@@ -1,3 +1,7 @@
+.text-center {
+  text-align: center!important;
+  margin-top: 20px;
+}
 .container-messages{max-width:1170px; 
   margin:auto;
   margin-left: 225px;

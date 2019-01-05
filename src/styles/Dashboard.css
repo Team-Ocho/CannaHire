@@ -4,10 +4,11 @@
 
   .your-dashboard {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .your-jobs {
+    padding-top: 20px;
     padding-bottom: 20px;
     margin-top: -20px;
   }
