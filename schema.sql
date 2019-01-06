@@ -1,6 +1,6 @@
 USE `hkbvtsjz9cohxt94`;
 
-CREATE TABLE users (
+CREATE TABLE applicant_login (
     user_id INT AUTO_INCREMENT NOT NULL,
 	username VARCHAR(200) NOT NULL,
     first_name VARCHAR(200) NOT NULL,
@@ -17,7 +17,6 @@ CREATE TABLE company_login (
     company_name varchar(200) NOT NULL,
     company_website varchar (200) NOT NULL,
     company_email varchar(200) NOT NULL,
-    company_bio VARCHAR(2500) NOT NULL,
     password VARCHAR(200) NOT NULL,
     PRIMARY KEY (company_id)
 
