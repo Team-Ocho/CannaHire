@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import "../../styles/UserLogin.css";
 import {Link} from "react-router-dom";
+var axios = require("axios")
 
 class UserLogin extends Component {
 
@@ -11,7 +12,8 @@ class UserLogin extends Component {
         email: "",
         password: "",
         confirmPassword: "",
-        security:""
+        security:"",
+        securityAnswer:""
     }
 
     
@@ -28,6 +30,21 @@ class UserLogin extends Component {
         })
     }
 
+    userRegister = () => {
+      console.log("something happened React")
+      const userInfo = {
+        firstName: this.state.firstName,
+        lastName: this.state.lastName,
+        email: this.state.email,
+        password: this.state.password,
+        security: this.state.security,
+        securityAnswer: this.state.securityAnswer
+      }
+      axios.post("/register", userInfo, function (data) {
+        console.log(data)
+      })
+    }
+
     render() {
         return(
 
@@ -35,77 +52,77 @@ class UserLogin extends Component {
             <header className = "logo-header">
                 <img src={require('../../assets/logo1.png')} className="login-logo"></img>                
             </header>
-            <div class="container register">
-            <div class="row">
-                <div class="col-md-3 register-left">
+            <div className="container register">
+            <div className="row">
+                <div className="col-md-3 register-left">
                     <img src="https://cdn2.iconfinder.com/data/icons/circle-ux-ui/512/lock_half_background-512.png" alt="" />
                     <h3>Welcome</h3>
                     <p>Already a member?</p>
                     <input type="submit" name="" value="Login" />
                 </div>
-                <div class="col-md-9 register-right">
-                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                        <li class="nav-item">
+                <div className="col-md-9 register-right">
+                    <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li className="nav-item">
                         <Link
                         to="/user-login"
                         >
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                            <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
                             </Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                         <Link
                         to="/admin-login">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
                             </Link>
                         </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3 class="register-heading">Apply as an Employee</h3>
-                            <div class="row register-form">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input onChange={this.handleChange} name="firstName" type="text" class="form-control" placeholder="First Name *" value={this.state.firstName} />
+                    <div className="tab-content" id="myTabContent">
+                        <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 className="register-heading">Apply as an Employee</h3>
+                            <div className="row register-form">
+                                <div className="col-md-6">
+                                    <div className="form-group">
+                                        <input onChange={this.handleChange} name="firstName" type="text" className="form-control" placeholder="First Name *" value={this.state.firstName} />
                                     </div>
-                                    <div class="form-group">
-                                        <input onChange={this.handleChange} name="lastName" type="text" class="form-control" placeholder="Last Name *" value={this.state.lastName} />
+                                    <div className="form-group">
+                                        <input onChange={this.handleChange} name="lastName" type="text" className="form-control" placeholder="Last Name *" value={this.state.lastName} />
                                     </div>
-                                    <div class="form-group">
-                                        <input onChange ={this.handleChange} name="password" type="password" class="form-control" placeholder="Password *" value={this.state.password} />
+                                    <div className="form-group">
+                                        <input onChange ={this.handleChange} name="password" type="password" className="form-control" placeholder="Password *" value={this.state.password} />
                                     </div>
-                                    <div class="form-group">
-                                        <input onChange={this.handleChange} name="confirmPassword" type="password" class="form-control" placeholder="Confirm Password *" value={this.state.confirmPassword} />
+                                    <div className="form-group">
+                                        <input onChange={this.handleChange} name="confirmPassword" type="password" className="form-control" placeholder="Confirm Password *" value={this.state.confirmPassword} />
                                     </div>
-                                    <div class="form-group">
-                                        <div class="maxl">
-                                            <label class="radio inline">
+                                    <div className="form-group">
+                                        <div className="maxl">
+                                            <label className="radio inline">
                                                 <input type="radio" name="gender" value="male" checked></input>
                                                 <span> Male </span>
                                             </label>
-                                            <label class="radio inline">
+                                            <label className="radio inline">
                                                 <input type="radio" name="gender" value="female"></input>
                                                 <span>Female </span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input onChange = {this.handleChange} type="email" class="form-control" name="email" placeholder="Your Email *" value={this.state.email} />
+                                <div className="col-md-6">
+                                    <div className="form-group">
+                                        <input onChange = {this.handleChange} type="email" className="form-control" name="email" placeholder="Your Email *" value={this.state.email} />
                                     </div>
     
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option class="hidden" selected disabled>Please select your Sequrity Question</option>
+                                    <div className="form-group">
+                                        <select className="form-control">
+                                            <option className="hidden" selected disabled>Please select your Sequrity Question</option>
                                             <option>What is your Birthdate?</option>
                                             <option>What is Your old Phone Number</option>
                                             <option>What is your Pet Name?</option>
                                         </select>
                                     </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
+                                    <div className="form-group">
+                                        <input type="text" className="form-control" placeholder="Enter Your Answer *" value="" />
                                     </div>
-                                    <input type="submit" class="btnRegister" value="Register" />
+                                    <input onClick={this.userRegister} type="submit" className="btnRegister" value="Register" />
                                 </div>
                             </div>
                         </div>
