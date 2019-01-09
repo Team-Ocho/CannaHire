@@ -8,6 +8,11 @@ import FindJob from './components/pages/FindJob';
 import CompanyAdmin from "../src/components/company-pages/CompanyAdmin";
 import CompanyLearn from "../src/components/company-pages/AdminLearn";
 import Applicant from "../src/components/company-pages/Applicants";
+import CompanyInbox from './components/company-pages/CompanyInbox';
+import UserLogin from './components/pages/UserLogin';
+import CompanyLogin from './components/company-pages/CompanyLogin';
+import Register from './components/pages/Register';
+
 
 
 class App extends Component {
@@ -19,11 +24,15 @@ class App extends Component {
         <Route exact path ="/login" component = {FindJob}></Route>
         <Route exact path ="/search-jobs" component = {FindJob}></Route>
         <Route exact path="/dashboard" component={Dashboard}></Route>
-        <Route exact path="/messages" component={Messages}></Route>
+        <Route exact path="/inbox" component={Messages}></Route>
         <Route exact path ="/learn" component={Learn}></Route>
         <Route exact path="/admin-dashboard" component={CompanyAdmin}></Route>
         <Route exact path="/admin-learn" component={CompanyLearn}></Route>
         <Route exact path ="/applicants" component={Applicant}></Route>
+        <Route exact path = "/admin-inbox" component={CompanyInbox}></Route>
+        <Route exact path = "/register" component={Register}></Route>
+        <Route exact path = "/user-login" component={UserLogin}></Route>
+        <Route exact path = "/admin-login" component={CompanyLogin}></Route>
       </div>
       </Router>
     );    

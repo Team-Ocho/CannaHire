@@ -18,9 +18,9 @@ const CompanySidebar = () => (
           Applicants
         </Link>
         <Link
-          to="/inbox"
+          to="/admin-inbox"
           className={
-            window.location.pathname === "/inbox" ? "nav-link active" : "nav-link"
+            window.location.pathname === "/admin-inbox" ? "nav-link active" : "nav-link"
           }
         >
           Inbox
