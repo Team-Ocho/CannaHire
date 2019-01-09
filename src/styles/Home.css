@@ -6,6 +6,10 @@
     font-family: 'Lato', sans-serif;
     /* font-weight: 600; */
 }
+.home-body {
+    margin-top: 150px;
+    padding-bottom: 30px;
+}
 
 .map-location {
     text-align: center;
@@ -55,15 +59,17 @@ form {
     /* padding-bottom: 100px; */
 }
 
-div {
+.dashboard-main {
     /* background: url("../leaf.jpg") no-repeat center center fixed; */
     background-size: cover;
-    background-image: linear-gradient(to right, rgb(131, 146, 137) , rgb(7, 111, 45));
-    padding-bottom: 30px;
+    /* padding-bottom: 10px; */
+ 
   }
 
-  h3 {
+
+  .top {
       font-size: 20px;
+      padding-top: 40px;
   }
   
  

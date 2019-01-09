@@ -3,9 +3,6 @@ import "../../styles/Home.css";
 import "../../../src/index.css";
 import { Link } from "react-router-dom";
 
-// import NavTabs from "../NavTabs";
-import NavTabs from "../NavTabs";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 
@@ -54,6 +51,17 @@ function Home() {
       </Link>
 
     </li>
+    <li className="nav-item">
+      <Link
+        to="/register"
+        className={
+          window.location.pathname === "/register" ? "nav-link active" : "nav-link"
+        }
+      >
+        Register
+      </Link>
+
+    </li>
   </ul>
         <div className="home-body">
             <header className = "header">
@@ -74,12 +82,12 @@ function Home() {
             <h3>Search and apply for jobs.</h3>
             <img className = "screenshot-images"href="" src ={require('../../assets/search.png')} alt=""></img>
 
-            <h3>Learn about the cannabis market.</h3>
-            <img className = "screenshot-images"href="" src ={require('../../assets/screenshot-placeholder.png')} alt=""></img>
+            <h3 className="top">Learn about the cannabis market.</h3>
+            <img className = "screenshot-images"href="" src ={require('../../assets/learnscreenshot.png')} alt=""></img>
 
 
-            <h3>Track your career.</h3>
-            <img className = "screenshot-images"href="" src ={require('../../assets/screenshot-placeholder.png')} alt=""></img>
+            <h3 className="top">Track your career.</h3>
+            <img className = "screenshot-images"href="" src ={require('../../assets/inboxscreenshot.png')} alt=""></img>
 
 
             </div>

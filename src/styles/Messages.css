@@ -1,3 +1,7 @@
+.text-center {
+  text-align: center!important;
+  margin-top: 20px;
+}
 .container-messages{max-width:1170px; 
   margin:auto;
   margin-left: 225px;
@@ -62,7 +66,7 @@ img{ max-width:100%;}
 }
 .inbox_chat { height: 550px; overflow-y: scroll;}
 
-.active_chat{ background:#ebebeb;}
+.active_chat{ background:#ddedf8;}
 
 .incoming_msg_img {
   display: inline-block;
@@ -121,6 +125,8 @@ img{ max-width:100%;}
   min-height: 48px;
   width: 100%;
 }
+
+
 
 .type_msg {border-top: 1px solid #c4c4c4;position: relative;}
 .msg_send_btn {

@@ -24,7 +24,34 @@ connection.connect(err => {
   }
 })
 
-app.get('/login',  )
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+    const connection = require("./config/connection.js")
+
+    connection.query("SELECT id, password FROM users WHERE username = ?", [username], function (err, results, fields){
+      if (err) {done(err)}
+      
+      if (results.length === 0) {
+        done(null, false)
+      } else {
+          const hash = results[0].password.toString()
+        
+          if(password === hash) {
+          
+            console.log("log in totally worked")
+            return done(null, {user_id: results[0].id})
+        
+          } else {
+          
+            return done(null, false)
+          }
+      }
+    })
+  }
+))
 
 app.post('/login',
   passport.authenticate('local'),
