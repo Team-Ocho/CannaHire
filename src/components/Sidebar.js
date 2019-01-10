@@ -34,12 +34,12 @@ const Sidebar = () => (
           Learn
           </Link>
         <Link
-          to="/messages"
+          to="/inbox"
           className={
             window.location.pathname === "/messages" ? "nav-link active" : "nav-link"
           }
         >
-          Messages
+          Inbox
         </Link>
         <Link
           to="/saved-posts"

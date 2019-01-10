@@ -6,6 +6,10 @@
     font-family: 'Lato', sans-serif;
     /* font-weight: 600; */
 }
+.home-body {
+    margin-top: 150px;
+    padding-bottom: 30px;
+}
 
 .map-location {
     text-align: center;
@@ -62,8 +66,10 @@ form {
  
   }
 
-  h3 {
+
+  .top {
       font-size: 20px;
+      padding-top: 40px;
   }
   
  
