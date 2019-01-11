@@ -12,12 +12,15 @@ import CompanyInbox from './components/company-pages/CompanyInbox';
 import UserLogin from './components/pages/UserLogin';
 import CompanyLogin from './components/company-pages/CompanyLogin';
 import Register from './components/pages/Register';
+import PostJob from './components/company-pages/PostJob';
+
 
 
 
 class App extends Component {
   render() {
     return (
+      
       <Router>
       <div>
         <Route exact path = "/" component = {Home}></Route>
@@ -33,6 +36,8 @@ class App extends Component {
         <Route exact path = "/register" component={Register}></Route>
         <Route exact path = "/user-login" component={UserLogin}></Route>
         <Route exact path = "/admin-login" component={CompanyLogin}></Route>
+        <Route exact path="/post-job" component={PostJob}></Route>
+        <Route exact path="/post" component={Applicant}></Route>
       </div>
       </Router>
     );    

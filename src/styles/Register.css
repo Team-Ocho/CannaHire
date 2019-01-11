@@ -7,10 +7,16 @@
     height: 400px;
     margin-top: 10%;
     margin-left: 90px;
-    background-color: #111;
+    background-color: #353c4e;
 
 
     
+  }
+
+  .row .register-form {
+    display: -webkit-inline-box;
+    margin-top: 0px;
+
   }
 
   .paragraph {
@@ -31,7 +37,7 @@
       width: 70px;
       /* margin-top: -70px; */
       margin-left: 47%;
-      margin-top: 20px;
+      /* margin-top: 20px; */
       /* margin-bottom: -70px; */
 
   }

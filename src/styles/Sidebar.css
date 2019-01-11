@@ -1,33 +1,52 @@
 .sidenav {
     height: 100%;
-    width: 200px;
+    /* width: 200px; */
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #353c4e;
     overflow-x: hidden;
     margin-top: 0;
   }
+  .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item>li>a {
+    text-align: left;
+    padding: 8px 15px;
+}
+.label-warning {
+  background: -webkit-gradient(linear, left top, right top, from(#fe9365), to(#feb798));
+  background: linear-gradient(to right, #fe9365, #feb798);
+}
+.pcoded .pcoded-navbar .pcoded-item>li>a {
+  display: block;
+  font-size: 14px;
+  padding: 0 15px;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 
   .profile {
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    margin-left: -15px;
-    margin-top: 100px;
+    margin-left: 10px;
+        margin-top: 100px;
   }
 
  figcaption {
    color: white;
-   font-size: 20px;
-   margin-left: -5px;
+   font-size: 16px;
+   margin-left: 10px;
+   /* text-align: center; */
  }
   
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     display: block;
   }
@@ -35,24 +54,28 @@
   .sidenav a:hover {
     color: #f1f1f1;
   }
+
+ 
   
 
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav a {font-size: 16px;}
   }
+
 
   .dashboard-main {
     background-color: white;
     background-image: none;
+    /* font-size: 14px; */
   }
 
   .dashboard-logo {
       width: 50px;
       height: 50px;
-      margin-left: 45px;
-      margin-top: 10px;
+      margin-left: 60px;
+            margin-top: 10px;
   }
 
   #root {
@@ -64,15 +87,13 @@
   .hi {
       color: white;
       padding-top: 20px;
+      font-size: 20px;
+    
   }
 
   div {
       background-image: none;
   }
-
-
-
-
 
   .nav {
     display: -ms-flexbox;
@@ -134,23 +155,6 @@ a {
 }
 
 
-
-.search-jobs {
-  height: 30px;
-  width: 300px;
-  /* margin-top: -40px; */
-
-}
-
-.start-search {
-  height: 30px;
-  width: 50px;
-  margin-top: -30px;
-  
-  color: black;
-  display: -webkit-box;
-
-}
 body {
   font-family: Arial;
 }
@@ -158,16 +162,51 @@ body {
 * {
   box-sizing: border-box;
 }
+ 
 
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-  margin-left: 200px;
 
+.card-body  {
+  color: lightgrey;
+  border: solid;
+  border-width: 1px;
+  /* margin-left: 150px; */
+  /* float: left; */
+  width: 100%;
+  margin-left: 265px;
+  padding-left: 130px;
+}
+
+.btn .btn-default {
+  margin-left: 5px;
+  background-color: #353c4e;
+  
+  
+}
+
+#email {
+  width:300px;
+}
+#pwd {
+  width: 300px;
+}
+
+
+
+label {
+  padding-right:10px;
+  padding-left: 10px;
+  color: black;
+}
+
+button {
+  background-color: #353c4e;
+  margin-left: 5px;
+  color: white;
+}
+
+.search-button {
+  color: #353c4e;
+  background-color: #353c4e;
 }
 
 form.example button {

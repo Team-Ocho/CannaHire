@@ -19,19 +19,27 @@
 div .card {
     text-align: left;
     width: 80%;
-    margin-left: 240px;
+    margin-left: 265px;
     padding-bottom: 30px;
     padding-top: 5px;
 }
 
 .results {
-    text-align: center;
+    text-align: left;
+    margin-left: 270px;
 }
 
 .card-footer {
     margin-bottom: -20px;
 }
 
+.col-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  /* margin-left: 10px; */
+}
 
 .breadcrumbs{
     color: blue;
