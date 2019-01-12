@@ -1,16 +1,22 @@
 .login-card {
     box-shadow: 0 4px 8px 0 rgba(73, 122, 155, 0.774);
-    padding: 16px;
+    padding: .011em;
     text-align: center;
     background-color: #f1f1f1;
-    width: 600px;
-    height: 400px;
+    width: 40.0em;
+    height: 25.0em;
     margin-top: 10%;
-    margin-left: 90px;
-    background-color: #111;
+    margin-left: 6.0em;
+    background-color: #353c4e;
 
 
     
+  }
+
+  .row .register-form {
+    display: -webkit-inline-box;
+    margin-top: 0px;
+
   }
 
   .paragraph {
@@ -21,17 +27,19 @@
   .register-login {
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen";
+      padding-top: 1%;
 
   }
 
   .register-logo {
       text-align: center;
       align-content: center;
-      height: 70px;
-      width: 70px;
+      height: 4.5em;
+      width: 4.5em;
       /* margin-top: -70px; */
       margin-left: 47%;
-      margin-top: 20px;
+      margin-top: 1%;
+      /* margin-top: 20px; */
       /* margin-bottom: -70px; */
 
   }
@@ -39,7 +47,7 @@
   .statement {
       text-align: center;
       color: white;
-      padding-top: 10px;
+      /* padding-top: 5%; */
   }
 
   .job-seeker {

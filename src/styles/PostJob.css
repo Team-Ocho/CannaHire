@@ -1,0 +1,46 @@
+.form-group-job {
+    margin-left: 40%;
+    padding: 3.0px;
+    margin-top: 2%;
+    
+}
+
+.post-a-job {
+    margin-left: 11.0em;
+    margin-top: 2%;
+}
+
+.create-job-form {
+  
+    margin-left: 35%;
+    padding: 3.0px;
+    margin-top: 1%;
+    
+}
+
+.submit-job {
+    margin-left: 38.0em;
+    padding: .5em;
+    margin-top: 1.0em;
+}
+
+#exampleFormControlInput1 {
+    margin-top: .5em;
+    width: 70%;
+}
+#exampleFormControlSelect1{
+    width: 70%;
+}
+
+#exampleFormControlInputCity{
+    width: 70%;
+}
+
+#exampleFormControlTextarea1{
+    width: 70%;
+}
+label {
+    margin-top: .5em;
+    width: 70%;
+}
+
