@@ -19,25 +19,33 @@
 div .card {
     text-align: left;
     width: 80%;
-    margin-left: 240px;
-    padding-bottom: 30px;
-    padding-top: 5px;
+    margin-left: 18.0em;
+    padding-bottom: 1.7em;
+    padding-top: .3em;
 }
 
 .results {
-    text-align: center;
+    text-align: left;
+    /* margin-left: 15.0em; */
 }
 
 .card-footer {
-    margin-bottom: -20px;
+    /* margin-bottom: -.05em; */
 }
 
+.col-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  /* margin-left: 10px; */
+}
 
 .breadcrumbs{
     color: blue;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 1%;
+    padding-bottom: 5%;
 }
 
 .list-group-item {

@@ -4,6 +4,9 @@ import "../../styles/CompanyLogin.css";
 import {Link} from 'react-router-dom';
 
 class CompanyLogin extends Component {
+
+    //add state and handler here 
+    
     render() {
         return (
             <div>

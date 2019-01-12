@@ -1,0 +1,59 @@
+
+.box{
+    padding:60px 0px;
+    margin-left: 17.0rem;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:40px 10px;
+    margin:10px 0px;
+    border-style: solid;
+    border-color: #4183D7;
+    border-width: 1px;
+    /* margin-left: 18.0rem; */
+}
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#4183D7;
+}
+
+/* .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item>li>a {
+    text-align: left;
+    padding: 8px 15px;
+} */
+.label-warning-jobactive {
+  background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
+  background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
+  background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
+  background: linear-gradient(to right, #05a041, #43c469);
+}
+.pcoded-badge-jobactive  {
+  display: block;
+  font-size: 14px;
+  padding: 0 15px;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.label-warning-jobinactive {
+    background: -webkit-gradient(linear, left top, right top, from(#d42d2d), to(#f07171));
+    background: -webkit-gradient(linear, left top, right top, from(#d42d2d), to(#f07171));
+    background: -webkit-gradient(linear, left top, right top, from(#d42d2d), to(#f07171));
+    background: linear-gradient(to right, #d42d2d, #f07171);
+  }
+  .pcoded-badge-jobinactive  {
+    display: block;
+    font-size: 14px;
+    padding: 0 15px;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }

@@ -1,12 +1,12 @@
 import React from "react";
 import JobResults from "../JobResults";
 import Sidebar from "../Sidebar";
-import {Component} from 'react';
-
+import { Component } from 'react';
+import "../../styles/FindJob.css";
 
 
 class FindJob extends Component {
-  state={
+  state = {
     searchValue: ""
   }
 
@@ -18,18 +18,25 @@ class FindJob extends Component {
   }
 
   render() {
-    return(
+    return (
       <div>
-      <Sidebar />
-      <div className="main">
-        <form className="example">
-          <input onChange={this.handleInputChange} name="searchValue" type="text" placeholder="Location, Job Title" value={this.state.searchValue}></input>
-  
-          <button type="submit">Search</button>
-        </form>
+        <Sidebar />
+        <div className="container moveRightPlease">
+        <div className="row">
+		      <div className="col-12 text-center">
+            <div className="input-group" id="adv-search">
+            <h5 className="locationlabel">Location: <input type="text" className="searchform-control" placeholder="New York" /></h5>
+                
+                <h5 className="titlelabel">Job Title: <input type="text" className="searchform-control" placeholder="Financial Analyst" /></h5>
+                        <button type="submit" className="btn btn-primary searchsubmit">Search</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+            <JobResults />
       </div>
-      <JobResults />
-    </div>
+
 
     )
   }

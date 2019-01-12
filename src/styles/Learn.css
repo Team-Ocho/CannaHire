@@ -1,5 +1,5 @@
 .container-articles {
-    margin-left: 250px;
+    margin-left: 18em;
 }
 /* image thumbnail */
 .thumb {
@@ -11,7 +11,13 @@
 
 .header {
     margin-top: 10px;
-    padding-bottom: 20px;
+	padding-bottom: 20px;
+	margin-left: 40px;
+}
+
+.second-column {
+	float: right;
+	display: contents;
 }
 
 /* Style to article Author */
@@ -21,6 +27,12 @@
     color: #aab6aa;
     padding-left: 10px;
 }
+
+.learn-row {
+	margin-left: 10px;
+	/* float: left; */
+}
+
 
 
 /* Main Article [Module]
@@ -34,6 +46,13 @@
 	position: relative;
 	margin-bottom: 1em;
 }
+.learn-row-main {
+	display: flex;
+	/* margin-left: 50px; */
+
+
+}
+
 
 .featured-article .block-title {
 	/* Position & Box Model */
@@ -46,6 +65,7 @@
 	/* Width/Height */
 	padding: .5em;
 	width: 100%;
+	
 	/* Text color */
 	color: #fff;
 }
@@ -75,6 +95,13 @@
 
 .main-list {
 	padding-left: .5em;
+	float: left;
+	padding-right: 25px;
+}
+
+.learn-row2 {
+	float: right;
+	display: contents;
 }
 
 .main-list .media {
