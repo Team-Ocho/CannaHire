@@ -32,15 +32,26 @@ class UserLogin extends Component {
 
     userRegister = () => {
       console.log("something happened React")
-      const userInfo = {
-        firstName: this.state.firstName,
-        lastName: this.state.lastName,
-        email: this.state.email,
-        password: this.state.password,
-        security: this.state.security,
-        securityAnswer: this.state.securityAnswer
+      var fName = this.state.firstName
+      var lName = this.state.lastName
+      var email = this.state.email
+      var password = this.state.password
+      console.log(fName, lName, email, password)
+      var userInfo = {
+        firstName: fName,
+        lastName: lName,
+        email: email,
+        password: password,
+        // security: this.state.security,
+        // securityAnswer: this.state.securityAnswer
       }
-      axios.post("/register", userInfo, function (data) {
+      console.log(userInfo)
+      axios.post("/register", {
+        firstName: fName,
+        lastName: lName,
+        email: email,
+        password: password
+      }).then(function (data) {
         console.log(data)
       })
     }
