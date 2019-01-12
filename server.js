@@ -47,7 +47,6 @@ app.use(passport.session());
 
 passport.use(new LocalStrategy(
   function (email, password, done) {
-    const connection = require("./config/connection.js")
 
     connection.query("SELECT user_id, password FROM applicant_login WHERE email = ?", [email], function (err, results, fields) {
       if (err) { done(err) }
@@ -132,6 +131,7 @@ app.post("/companyregister", function (req, res) {
 app.post('/login',
   passport.authenticate('local'),
   function (req, res) {
+    console.log("did something")
     // If this function gets called, authentication was successful.
     // `req.user` contains the authenticated user.
     res.redirect('/users/' + req.user.username);

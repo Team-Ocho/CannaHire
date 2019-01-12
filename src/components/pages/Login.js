@@ -3,6 +3,7 @@ import { Component } from 'react';
 import "../../styles/LoginForm.css";
 import { timingSafeEqual } from 'crypto';
 import {Link} from "react-router-dom";
+import Axios from 'axios';
 
 
 class Login extends Component {
@@ -10,7 +11,7 @@ class Login extends Component {
      super(props);
      this.state={
          email:"",
-         pswd: ""
+         password: ""
      };
 
      this.handleLogin= this.handleLogin.bind(this);
@@ -29,6 +30,10 @@ class Login extends Component {
 
  handleLoginSubmit (event) {
      alert('Successfully logging in...');
+     Axios.post("/login", this.state)
+     .then( res => {
+       console.log(res)
+     })
      event.target.reset();
  }
 
