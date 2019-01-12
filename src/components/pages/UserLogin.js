@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import "../../styles/UserLogin.css";
 import {Link} from "react-router-dom";
+var axios = require("axios")
 
 class UserLogin extends Component {
 
@@ -11,7 +12,8 @@ class UserLogin extends Component {
         email: "",
         password: "",
         confirmPassword: "",
-        security:""
+        security:"",
+        securityAnswer:""
     }
 
     
@@ -28,6 +30,32 @@ class UserLogin extends Component {
         })
     }
 
+    userRegister = () => {
+      console.log("something happened React")
+      var fName = this.state.firstName
+      var lName = this.state.lastName
+      var email = this.state.email
+      var password = this.state.password
+      console.log(fName, lName, email, password)
+      var userInfo = {
+        firstName: fName,
+        lastName: lName,
+        email: email,
+        password: password,
+        // security: this.state.security,
+        // securityAnswer: this.state.securityAnswer
+      }
+      console.log(userInfo)
+      axios.post("/register", {
+        firstName: fName,
+        lastName: lName,
+        email: email,
+        password: password
+      }).then(function (data) {
+        console.log(data)
+      })
+    }
+
     render() {
         return(
 
@@ -35,9 +63,9 @@ class UserLogin extends Component {
             <header className = "logo-header">
                 <img src={require('../../assets/logo1.png')} className="login-logo"></img>                
             </header>
-            <div class="container register">
-            <div class="row">
-                <div class="col-md-3 register-left">
+            <div className="container register">
+            <div className="row">
+                <div className="col-md-3 register-left">
                     <img src="https://cdn2.iconfinder.com/data/icons/circle-ux-ui/512/lock_half_background-512.png" alt="" />
                     <h3>Welcome</h3>
                     <p>Already a member?</p>
@@ -105,7 +133,7 @@ class UserLogin extends Component {
                                     <div className="form-group">
                                         <input type="text" className="form-control" placeholder="Enter Your Answer *" value="" />
                                     </div>
-                                    <input type="submit" className="btnRegister" value="Register" />
+                                    <input onClick={this.userRegister} type="submit" className="btnRegister" value="Register" />
                                 </div>
                             </div>
                         </div>
