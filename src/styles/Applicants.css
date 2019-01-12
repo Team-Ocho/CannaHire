@@ -1,0 +1,68 @@
+.container-applicants {
+margin-left: 18.0em;
+width: 96%;
+
+}
+
+
+
+
+.panel-title {
+    margin-top: 1.250em;
+}
+
+tr:hover {
+    background-color: #ffff99;
+  }
+
+.pcoded-reject {
+    display: block;
+    font-size: 14px;
+    padding: 0 .938em;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+.label-reject {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: .003em;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+.label-warning-reject {
+    background: -webkit-gradient(linear, left top, right top, from(#f74646), to(#ec7575));
+    background: -webkit-linear-gradient(left, #f74646, #ec7575);
+    background: linear-gradient(to right, #f74646, #ec7575);
+    height: 10px;
+}
+
+.pcoded-accept {
+    display: block;
+    font-size: 14px;
+    padding: 0 .010em;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+.label-accept {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: .003em;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+.label-warning-accept {
+    background: -webkit-gradient(linear, left top, right top, from(#38a33e), to(#75ec85));
+    background: -webkit-linear-gradient(left, #38a33e, #75ec85);
+    background: linear-gradient(to right, #38a33e, #75ec85);
+    height: 10px;
+}

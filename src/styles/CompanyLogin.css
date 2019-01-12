@@ -16,6 +16,31 @@ margin-left: 47%;
 margin-top: 20px;
 
 }
+.pcoded .pcoded-navbar .pcoded-item li a .pcoded-badge {
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    top: 12px;
+    vertical-align: middle;
+    white-space: nowrap;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+.label {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: 5px;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+.label-danger {
+    background: -webkit-gradient(linear, left top, right top, from(#fe5d70), to(#fe909d));
+    background: linear-gradient(to right, #fe5d70, #fe909d);
+}
 .register-left{
     text-align: center;
     color: #fff;
