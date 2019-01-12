@@ -49,16 +49,16 @@ class PostJob extends Component {
         <div className="create-job-form">
           <form onSubmit={this.handleSubmit}>
             <label for="exampleFormControlInput1">Job Title</label>
-            <input name="jobTitle" value={this.state.jobTitle} onChange={this.handleChange} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Project Manager"></input>
+            <input name="jobTitle" value={this.state.jobTitle} onChange={this.handleChange} type="text" className="form-control" id="exampleFormControlInput1" placeholder="Project Manager"></input>
             <label for="exampleFormControlSelect1">Level</label>
-            <select name="level" value={this.state.level} onChange={this.handleChange} class="form-control" id="exampleFormControlSelect1">
+            <select name="level" value={this.state.level} onChange={this.handleChange} className="form-control" id="exampleFormControlSelect1">
               <option>Intern</option>
               <option>Entry Level</option>
               <option>Junior/Mid-level</option>
               <option>Senior</option>
             </select>
             <label for="exampleFormControlSelect1">Job Location</label>
-            <select name="jobLocation" value={this.state.jobLocation} onChange={this.handleChange} class="form-control" id="exampleFormControlSelect1">
+            <select name="jobLocation" value={this.state.jobLocation} onChange={this.handleChange} className="form-control" id="exampleFormControlSelect1">
               <option>Alabama</option>
               <option>Alaska</option>
               <option>Arizona</option>
@@ -111,16 +111,16 @@ class PostJob extends Component {
               <option>Wyoming</option>
             </select>
             <label className="city" for="exampleFormControlSelect1">City</label>
-            <input name="city" value={this.state.city} onChange={this.handleChange} type="text" class="form-control" id="exampleFormControlInputCity" placeholder="Birmingham"></input>
+            <input name="city" value={this.state.city} onChange={this.handleChange} type="text" className="form-control" id="exampleFormControlInputCity" placeholder="Birmingham"></input>
 
             <label for="exampleFormControlTextarea1">Job Description (300 character min.)</label>
-            <textarea minlength="300" name="jobDescription" value={this.state.jobDescription} onChange={this.handleChange} class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea minlength="300" name="jobDescription" value={this.state.jobDescription} onChange={this.handleChange} className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
             <label for="exampleFormControlTextarea1">Job Requirements (300 character min.)</label>
-            <textarea minlength="300" name="jobRequirements" value={this.state.jobRequirements} onChange={this.handleChange} class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea minlength="300" name="jobRequirements" value={this.state.jobRequirements} onChange={this.handleChange} className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
-            <label className="tags" for="exampleFormControlSelect1">Tags </label>
-            <input name="tags" value={this.state.tags} onChange={this.handleChange} type="text" class="form-control" id="exampleFormControlInputCity" placeholder="Marketing, Social Media, Graphic Design..."></input>
+            <label classNameName="tags" for="exampleFormControlSelect1">Tags </label>
+            <input name="tags" value={this.state.tags} onChange={this.handleChange} type="text" className="form-control" id="exampleFormControlInputCity" placeholder="Marketing, Social Media, Graphic Design..."></input>
 
             <button className="submit-job" type="submit" value="Submit">Submit</button>
           </form>
