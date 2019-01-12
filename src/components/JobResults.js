@@ -6,20 +6,29 @@ import { Component } from 'react';
 
 class JobResults extends Component {
   state = {
-    jobList: []
+    jobs: []
   }
 
   componentDidMount() {
     this.renderPage()
   }
 
-  renderPage = () => {
-    var posts;
+  renderPage = (event) => {
     Axios.get("/jobs/postings")
-    .then( function (data) {
-      console.log("Posts", data)
-      posts = data
-      var jobList = posts.map(function (job) {
+    .then( (res) => {
+      console.log("Posts", res.data)
+      
+      this.setState({
+        jobs: res.data
+      })
+    })
+  }
+
+
+  render() {
+    return (
+      <div className="results-table">
+        <h3 className="results">Search Results</h3>{this.state.jobs.map((job) => {
         return (
           <div className="card">
             <div className="container">
@@ -31,16 +40,7 @@ class JobResults extends Component {
             </div>
           </div>
         )
-      })
-      this.setState({jobList})
-    })
-  }
-
-
-  render() {
-    return (
-      <div className="results-table">
-        <h3 className="results">Search Results</h3>{this.state.jobList}
+      })}
       </div>
     )
   }

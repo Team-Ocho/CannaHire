@@ -1,8 +1,9 @@
-USE 'hkbvtsjz9cohxt94' ;
+-- USE 'hkbvtsjz9cohxt94' ;
+USE cannahire;
 
 INSERT INTO applicant_login
-(username, first_name, last_name, email, resume, cover_letter, password)
-VALUES ('LoloSantos', 'Lauren', 'Santosuosso', 'noway@yahoo.com', 'resume here', 'Cover Letter would be put here', 'password');
+(first_name, last_name, email, resume, cover_letter, password)
+VALUES ('Lauren', 'Santosuosso', 'noway@yahoo.com', 'resume here', 'Cover Letter would be put here', 'password');
 
 INSERT INTO company_login
 (company_name, company_website, company_email, password)  
@@ -86,7 +87,7 @@ VALUES ('Driver', 'Cresco Labs', 'Yellow Springs, Ohio', 'Full-Time Driver for o
 ('General Manager', 'Cura Cannabis Solutions', 'Detroit, Michigan', 'The General Manager will develop, build and maintain company strategic goals in line with Curas mission and values.', '5+ years of leadership experience in production, manufacturing management or a related field'),
 ('General Manager', 'Cura Cannabis Solutions', 'Ann Arbor, Michigan', 'The General Manager will develop, build and maintain company strategic goals in line with Curas mission and values.', '5+ years of leadership experience in production, manufacturing management or a related field'),
 ('General Manager', 'Cura Cannabis Solutions', 'Granville, Vermont', 'The General Manager will develop, build and maintain company strategic goals in line with Curas mission and values.', '5+ years of leadership experience in production, manufacturing management or a related field'),
-('General Manager', 'Cura Cannabis Solutions', 'Barre, Vermont', 'The General Manager will develop, build and maintain company strategic goals in line with Curas mission and values.', '5+ years of leadership experience in production, manufacturing management or a related field'),
+('General Manager', 'Cura Cannabis Solutions', 'Barre, Vermont', 'The General Manager will develop, build and maintain company strategic goals in line with Curas mission and values.', '5+ years of leadership experience in production, manufacturing management or a related field');
 
 
 

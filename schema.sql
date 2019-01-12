@@ -21,7 +21,7 @@ CREATE TABLE company_login (
   company_website varchar (200) NOT NULL,
   company_email varchar(200) NOT NULL,
   password VARCHAR(200) NOT NULL,
-  PRIMARY KEY (company_id)
+  PRIMARY KEY (user_id)
 );
 
 CREATE TABLE job_postings (
