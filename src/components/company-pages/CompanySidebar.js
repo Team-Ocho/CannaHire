@@ -33,6 +33,14 @@ const CompanySidebar = () => (
         ><i class="fa fa-map-pin" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</i>
           Post Job
           </Link>
+          <Link
+          to="/yourjobs"
+          className={
+            window.location.pathname === "/post-job" ? "nav-link active" : "nav-link"
+          }
+        ><i class="fa fa-list" aria-hidden="true">&nbsp;&nbsp;</i>
+          Your Jobs
+          </Link>
         <Link
           to="/admin-learn"
           className={

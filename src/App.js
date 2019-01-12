@@ -13,6 +13,7 @@ import UserLogin from './components/pages/UserLogin';
 import CompanyLogin from './components/company-pages/CompanyLogin';
 import Register from './components/pages/Register';
 import PostJob from './components/company-pages/PostJob';
+import YourJobs from './components/company-pages/YourJobs';
 
 
 
@@ -38,6 +39,7 @@ class App extends Component {
         <Route exact path = "/admin-login" component={CompanyLogin}></Route>
         <Route exact path="/post-job" component={PostJob}></Route>
         <Route exact path="/post" component={Applicant}></Route>
+        <Route exact path="/yourjobs" component={YourJobs}></Route>
       </div>
       </Router>
     );    

@@ -1,40 +1,38 @@
 import React from 'react';
-import "../../styles/Dashboard.css";
-import Card from "../Card";
-import Sidebar from '../Sidebar';
+import { Component } from 'react';
+import "../../styles/YourJob.css";
+import CompanySidebar from './CompanySidebar';
 
-const Dashboard = () => (
+class YourJobs extends Component {
 
- <div>
-   <Sidebar />
-    <div className="container container-dashboard">
-      <div className="row">
-        <div className="col-12 text-center">
-        </div>
-      </div>
+    render() {
+        return (
+            <div class="box">
+                <CompanySidebar />
 
-        <div class="container-yourjobs">
-                <h3>Your Jobs</h3>
+                <div class="container">
+                <h3>Your Job Postings</h3>
                     <div class="row">
 
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                             <div class="box-part text-center">
 
 
                                 <div class="title">
-                                    <h4>Social Media </h4>
+                                    <h4>Social Media Manager</h4>
                                 </div>
 
                                 <div class="text">
                                     <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
                                 </div>
 
+                                <span class="pcoded-badge-jobactive label label-warning-jobactive">ACTIVE</span><br></br>
                                 <a href="#">More</a>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                             <div class="box-part text-center">
 
@@ -47,11 +45,13 @@ const Dashboard = () => (
                                     <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
                                 </div>
 
+                                <span class="pcoded-badge-jobactive label label-warning-jobactive">ACTIVE</span><br></br>
                                 <a href="#">More</a>
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                             <div class="box-part text-center">
 
@@ -64,29 +64,13 @@ const Dashboard = () => (
                                     <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
                                 </div>
 
+                                <span class="pcoded-badge-jobactive label label-warning-jobactive">ACTIVE</span><br></br>
                                 <a href="#">More</a>
 
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                            <div class="box-part text-center">
-
-
-                                <div class="title">
-                                    <h4>Jr. Data Analyst</h4>
-                                </div>
-
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-
-                                <a href="#">More</a>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                             <div class="box-part text-center">
 
@@ -99,12 +83,13 @@ const Dashboard = () => (
                                     <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
                                 </div>
 
+                                <span class="pcoded-badge-jobinactive label label-warning-jobinactive">INACTIVE</span><br></br>
                                 <a href="#">More</a>
 
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                             <div class="box-part text-center">
 
@@ -117,13 +102,14 @@ const Dashboard = () => (
                                 <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
                                 </div>
 
+                                <span class="pcoded-badge-jobinactive label label-warning-jobinactive">INACTIVE</span><br></br>
                                 <a href="#">More</a>
 
 
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                             <div class="box-part text-center">
 
@@ -137,37 +123,21 @@ const Dashboard = () => (
 
                                 </div>
 
+                                <span class="pcoded-badge-jobinactive label label-warning-jobinactive">INACTIVE</span><br></br>
                                 <a href="#">More</a>
 
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                            <div class="box-part text-center">
-
-
-                                <div class="title">
-                                    <h4>Graphic Designer</h4>
-                                </div>
-
-                                <div class="text">
-                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-
-                                </div>
-
-                                <a href="#">More</a>
-
-
-                            </div>
-                        </div>
-                        <a className="view-more"href="#">View More</a>
 
                     </div>
                 </div>
-          </div>
+            </div>
+        )
+    }
 
-    </div>
-);
 
-export default Dashboard
+
+}
+
+export default YourJobs

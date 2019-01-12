@@ -1,5 +1,5 @@
 .container-articles {
-    margin-left: 250px;
+    margin-left: 18em;
 }
 /* image thumbnail */
 .thumb {
@@ -53,12 +53,7 @@
 
 }
 
-.featured-article {
-    width: 482px;
-    height: 350px;
-    position: relative;
-    margin-bottom: 1em;
-}
+
 .featured-article .block-title {
 	/* Position & Box Model */
 	position: absolute;

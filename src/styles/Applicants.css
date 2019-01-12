@@ -1,17 +1,24 @@
 .container-applicants {
-margin-left: 270px;
-width: 1350px;
+margin-left: 18.0em;
+width: 96%;
 
 }
+
+
+
 
 .panel-title {
-    margin-top: 20px;
+    margin-top: 1.250em;
 }
+
+tr:hover {
+    background-color: #ffff99;
+  }
 
 .pcoded-reject {
     display: block;
     font-size: 14px;
-    padding: 0 15px;
+    padding: 0 .938em;
     text-decoration: none;
     position: relative;
     -webkit-transition: all 0.3s ease-in-out;
@@ -22,7 +29,7 @@ width: 1350px;
     border-radius: 4px;
     font-size: 75%;
     padding: 4px 7px;
-    margin-right: 5px;
+    margin-right: .003em;
     font-weight: 400;
     color: #fff !important;
 }
@@ -37,7 +44,7 @@ width: 1350px;
 .pcoded-accept {
     display: block;
     font-size: 14px;
-    padding: 0 15px;
+    padding: 0 .010em;
     text-decoration: none;
     position: relative;
     -webkit-transition: all 0.3s ease-in-out;
@@ -48,7 +55,7 @@ width: 1350px;
     border-radius: 4px;
     font-size: 75%;
     padding: 4px 7px;
-    margin-right: 5px;
+    margin-right: .003em;
     font-weight: 400;
     color: #fff !important;
 }

@@ -19,18 +19,18 @@
 div .card {
     text-align: left;
     width: 80%;
-    margin-left: 265px;
-    padding-bottom: 30px;
-    padding-top: 5px;
+    margin-left: 18.0em;
+    padding-bottom: 1.7em;
+    padding-top: .3em;
 }
 
 .results {
     text-align: left;
-    margin-left: 270px;
+    /* margin-left: 15.0em; */
 }
 
 .card-footer {
-    margin-bottom: -20px;
+    /* margin-bottom: -.05em; */
 }
 
 .col-3 {
@@ -44,8 +44,8 @@ div .card {
 .breadcrumbs{
     color: blue;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 1%;
+    padding-bottom: 5%;
 }
 
 .list-group-item {
