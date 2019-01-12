@@ -21,71 +21,55 @@ class Learn extends React.Component {
     }
 
     render() {
-        return (<div>
-            <Sidebar />
-            <div className="container-articles">
-                <div className="row">
-                    <h1 className="header">Article Thumbnails</h1>
-                </div>
-                <div className="row">
-                    <div className="col-md-5 col-lg-5">
-                        <div className="featured-article">
-                            <a href="#">
-                                <img src="http://placehold.it/482x350" alt="" className="thumb"></img>
-                            </a>
-                            <div className="block-title">
-                                <h2>Lorem ipsum dolor asit amet</h2>
-                                <p className="by-author"><small>By Jhon Doe</small></p>
-                            </div>
+        return (
+            <div>
+        <Sidebar />
+        <div class="container-articles">
+            <div class="row">
+                <h1 className="header">Article Thumbnails</h1>
+            </div>
+            <div class="row learn-row-main">
+                <div class="col-md-5 col-lg-5">
+                    <div class="featured-article">
+                        <a href="#">
+                            <img src="http://placehold.it/482x350" alt="" class="thumb"></img>
+                        </a>
+                        <div class="block-title">
+                            <h2>Lorem ipsum dolor asit amet</h2>
+                            <p class="by-author"><small>By Jhon Doe</small></p>
                         </div>
                     </div>
-                    <div className="col-md-7 col-lg-7">
-                        <ul className="media-list main-list">
-                            <li className="media">
-                                <a className="pull-left" href="#">
-                                    <img className="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                                </a>
-                                <div className="media-body">
-                                    <h4 className="media-heading">Lorem ipsum dolor asit amet</h4>
-                                    <p className="by-author">By Jhon Doe</p>
-                                </div>
-                            </li>
-                            <li className="media">
-                                <a className="pull-left" href="#">
-                                    <img className="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                                </a>
-                                <div className="media-body">
-                                    <h4 className="media-heading">Lorem ipsum dolor asit amet</h4>
-                                    <p className="by-author">By Jhon Doe</p>
-                                </div>
-                            </li>
-                            <li className="media">
-                                <a className="pull-left" href="#">
-                                    <img className="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                                </a>
-                                <div className="media-body">
-                                    <h4 className="media-heading">Lorem ipsum dolor asit amet</h4>
-                                    <p className="by-author">By Jhon Doe</p>
-                                </div>
-                            </li>
-                        </ul>
+                </div>
+                <div class="col-md-5 col-lg-5">
+                    <div class="featured-article">
+                        <a href="#">
+                            <img src="http://placehold.it/482x350" alt="" class="thumb"></img>
+                        </a>
+                        <div class="block-title">
+                            <h2>Lorem ipsum dolor asit amet</h2>
+                            <p class="by-author"><small>By Jhon Doe</small></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        <div className="row">
-            <div className="leftcolumn">
-                {this.state.articles.map(({ author, title, description, publishedAt, url, urlToImage}) => {
-                    return (<div className="card" key={url}>
-                    <h2>{title}</h2>
-                    {/* <img alt="#" src={this.urlToImage}> {urlToImage}</img> */}
-                    <h5>{author}, {publishedAt}</h5>
-    
-                    <p className="align-right">{description}</p>
-                </div>)
-                })}
+                    <ul class="row media-list main-list">
+                        {this.state.articles.map(({author, title, url, urlToImage }) => {
+                            return (
+                                <li className="col-md-6">
+                                    <a className="pull-left" href={url}>
+                                        <img className="media-object" src={urlToImage} alt="Article"/>
+                                    </a>
+                                    <div className="media-body">
+                                        <h4 className="media-heading">{title}</h4>
+                                        <p className="by-author">{author}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
             </div>
         </div>
-    </div>)
+        )
     }
 }
 
