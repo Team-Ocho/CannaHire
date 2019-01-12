@@ -3,6 +3,7 @@ var mysql = require("mysql")
 var bodyParser = require("body-parser")
 var cookieParser = require("cookie-parser")
 const { check, validationResult } = require("express-validator/check")
+require("dotenv").config();
 
 // Authentication Routes
 const session = require("express-session")
@@ -17,18 +18,29 @@ app.use(bodyParser.json());
 
 app.use(cookieParser())
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
-  database: 'cannahire'
-})
+var PORT = process.env.PORT || 8080;
 
-connection.connect(err => {
-  if (err) {
-    return err
-  }
-})
+var connection;
+
+if (process.env.JAWSDB_URL) {
+   connection = mysql.createConnection(process.env.JAWSDB_URL);
+  } else {
+    connect = mysql.createConnection({
+    host: process.env.db_host,
+    // Your port; if not 3306
+    port: process.env.db_port,
+    // Your username
+    user:  process.env.db_user,
+    // Your password
+    password:  process.env.db_password,
+    database: "cannahire"
+  });
+};
+
+connection.connect(function(err) {
+  if (err) throw err;
+  console.log("connected as id " + connection.threadId)
+});
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -133,6 +145,6 @@ app.get('/jobs/postings', function (req, res) {
   })
 })
 
-app.listen(8080, () => {
-  console.log('Server listening on port 8080')
+app.listen(PORT, () => {
+  console.log('Server listening on port ' + PORT)
 })
