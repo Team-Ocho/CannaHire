@@ -14,6 +14,7 @@ import CompanyLogin from './components/company-pages/CompanyLogin';
 import Register from './components/pages/Register';
 import PostJob from './components/company-pages/PostJob';
 import YourJobs from './components/company-pages/YourJobs';
+import Login from './components/pages/Login';
 
 
 
@@ -25,12 +26,12 @@ class App extends Component {
       <Router>
       <div>
         <Route exact path = "/" component = {Home}></Route>
-        <Route exact path ="/login" component = {FindJob}></Route>
+        {/* <Route exact path ="/login" component = {FindJob}></Route> */}
         <Route exact path ="/search-jobs" component = {FindJob}></Route>
         <Route exact path="/dashboard" component={Dashboard}></Route>
         <Route exact path="/inbox" component={Messages}></Route>
         <Route exact path ="/learn" component={Learn}></Route>
-        <Route exact path="/admin-dashboard" component={CompanyAdmin}></Route>
+        <Route exact path="/admin-dashboard" component={Applicant}></Route>
         <Route exact path="/admin-learn" component={CompanyLearn}></Route>
         <Route exact path ="/applicants" component={Applicant}></Route>
         <Route exact path = "/admin-inbox" component={CompanyInbox}></Route>
@@ -40,6 +41,7 @@ class App extends Component {
         <Route exact path="/post-job" component={PostJob}></Route>
         <Route exact path="/post" component={Applicant}></Route>
         <Route exact path="/yourjobs" component={YourJobs}></Route>
+        <Route exact path="/login" component={Login}></Route>
       </div>
       </Router>
     );    
