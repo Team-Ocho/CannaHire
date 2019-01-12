@@ -74,7 +74,7 @@ class Learn extends React.Component {
             </div>
         <div className="row">
             <div className="leftcolumn">
-                {this.state.articles.map(({ author, title, description, publishedAt, url, }) => {
+                {this.state.articles.map(({ author, title, description, publishedAt, url, urlToImage}) => {
                     return (<div className="card" key={url}>
                     <h2>{title}</h2>
                     {/* <img alt="#" src={this.urlToImage}> {urlToImage}</img> */}
