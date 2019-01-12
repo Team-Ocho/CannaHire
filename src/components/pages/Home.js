@@ -17,7 +17,7 @@ function Home() {
           window.location.pathname === "/" ? "nav-link active" : "nav-link"
         }
       >
-        Find Jobs
+        Home
       </Link>
     </li>
     <li className="nav-item">

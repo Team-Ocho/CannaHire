@@ -1,10 +1,10 @@
 .text-center {
   text-align: center!important;
-  margin-top: 20px;
+  margin-top: 3%;
 }
-.container-messages{max-width:1170px; 
+.container-messages{max-width:1150px; 
   margin:auto;
-  margin-left: 225px;
+  margin-left: 18.0em;
 }
   
 img{ max-width:100%;}
