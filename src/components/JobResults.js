@@ -1,7 +1,6 @@
 import React from 'react';
 import "../styles/JobResults.css";
 import Axios from 'axios';
-import { Z_ASCII } from 'zlib';
 import { Component } from 'react';
 
 class JobResults extends Component {
