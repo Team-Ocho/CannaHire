@@ -21,8 +21,8 @@ class FindJob extends Component {
     return(
       <div>
       <Sidebar />
-      <div class="main">
-        <form class="example">
+      <div className="main">
+        <form className="example">
           <input onChange={this.handleInputChange} name="searchValue" type="text" placeholder="Location, Job Title" value={this.state.searchValue}></input>
   
           <button type="submit">Search</button>
