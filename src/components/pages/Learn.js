@@ -1,16 +1,34 @@
 import React from 'react';
 import "../../styles/Learn.css";
 import Sidebar from "../Sidebar";
+import API from '../../utils/API'
 
+class Learn extends React.Component {
+    state = {
+        articles: []
+    }
 
-const Learn = () => (
-    <div>
+    componentDidMount() {
+        const blackList = ['engadget', 'mashable', 'bbc-news', 'the-guardian-au']
+        API().then(d => {
+            d.json().then(({ articles }) => {
+                console.log(articles)
+                this.setState({ articles: articles.filter(({ source }) => {
+                    return !blackList.includes(source.id)
+                }) })
+            })
+        })
+    }
+
+    render() {
+        return (
+            <div>
         <Sidebar />
         <div class="container-articles">
             <div class="row">
                 <h1 className="header">Article Thumbnails</h1>
             </div>
-            <div class="learn-row-main">
+            <div class="row learn-row-main">
                 <div class="col-md-5 col-lg-5">
                     <div class="featured-article">
                         <a href="#">
@@ -32,83 +50,27 @@ const Learn = () => (
                             <p class="by-author"><small>By Jhon Doe</small></p>
                         </div>
                     </div>
-                </div>
-                </div>
-          
-                <div class="col-md-7 col-lg-7">
-                    <ul class="media-list main-list">
-                        <li class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
-                                <p class="by-author">By Jhon Doe</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
-                                <p class="by-author">By Jhon Doe</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
-                                <p class="by-author">By Jhon Doe</p>
-                            </div>
-                        </li>
-                        
-                    </ul>
-                </div>
-                <div class="col-md-7 col-lg-7 second-column">
-                    <ul class="media-list main-list">
-                        <li class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
-                                <p class="by-author">By Jhon Doe</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
-                                <p class="by-author">By Jhon Doe</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/150x90" alt="..."></img>
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
-                                <p class="by-author">By Jhon Doe</p>
-                            </div>
-                        </li>
-                        
-                    </ul>
                 </div>
             </div>
+                    <ul class="row media-list main-list">
+                        {this.state.articles.map(({author, title, url, urlToImage }) => {
+                            return (
+                                <li className="col-md-6">
+                                    <a className="pull-left" href={url}>
+                                        <img className="media-object" src={urlToImage} alt="Article"/>
+                                    </a>
+                                    <div className="media-body">
+                                        <h4 className="media-heading">{title}</h4>
+                                        <p className="by-author">{author}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+            </div>
         </div>
-    
-  
-
-
-
-
-  
-
         )
+    }
+}
 
 export default Learn

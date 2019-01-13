@@ -106,8 +106,12 @@
 
 .main-list .media {
 	padding-bottom: 1.1em;
-    border-bottom: 1px solid #e8e8e8;
-    margin-right: 10px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.main-list {
+	margin-right: 10px;
+	list-style: none;
 }
 
 .media-heading {
