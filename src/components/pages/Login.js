@@ -40,7 +40,7 @@ class Login extends Component {
             <div class="container-login">
             <Link 
             to="/">
-            <button className="back">Back</button>
+            <button className="back">Home</button>
             </Link>
             <img className="loginform-logo" src={require("../../assets/logo1.png")}></img>
                 <div class="login-form">

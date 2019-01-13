@@ -3,8 +3,7 @@ import CompanySidebar from "./CompanySidebar";
 import "../../styles/Applicants.css";
 import {Link} from 'react-router-dom';
 
-
-const Applicants = () => (
+const Applicants2 = () => (
 
     <div> 
         <CompanySidebar />
@@ -39,45 +38,45 @@ const Applicants = () => (
                   <tbody>
                           <tr>
                             <td align="center">
-                            Marketing Manager
+                            Community Outreach Coordinator
                             </td>
                             <td className="hidden-xs">1</td>
-                            <td>Leia Burns</td>
-                            <td>leiab@gmail.com</td>
-                            <td><span className="pcoded-badge label label-warning">NEW</span></td>
+                            <td>Luke Summer</td>
+                            <td>luke.summer@gmail.com</td>
                             <td></td>
+                            <td><span className="pcoded-badge-reject label-reject label-warning-reject">REJECTED</span></td>
                           </tr>
                           <tr>
                             <td align="center">
-                            Marketing Manager                            
+                            Community Outreach Coordinator                            
                             </td>
                             <td className="hidden-xs">2</td>
-                            <td>Matt Tome</td>
-                            <td>matttome@gmail.com</td>
-                            <td><span className="pcoded-badge label label-warning">NEW</span></td>
+                            <td>Mike Knight</td>
+                            <td>mknight@gmail.com</td>
                             <td></td>
+                            <td><span className="pcoded-badge-accept label-accept label-warning-accept">ACCEPTED</span></td>
 
 
                           </tr>
                           <tr>
                             <td align="center">
-                            Project Manager
+                            Community Outreach Coordinator
                             </td>
                             <td className="hidden-xs">3</td>
-                            <td>John Teeger</td>
-                            <td>jt1108@gmail.com</td>
+                            <td>Josh Liebs</td>
+                            <td>joshleibs@gmail.com</td>
                             <td></td>
-                            <td></td>
+                            <td><span className="pcoded-badge-accept label-accept label-warning-accept">ACCEPTED</span></td>
 
 
                           </tr>
                           <tr>
                             <td align="center">
-                            Project Manager
+                            Community Outreach Coordinator
                             </td>
                             <td className="hidden-xs">4</td>
-                            <td>Mindy Cane</td>
-                            <td>m.cane221@gmail.com</td>
+                            <td>Greg Stats</td>
+                            <td>greg.stats@gmail.com</td>
                             <td></td>
                             <td><span className="pcoded-badge-reject label-reject label-warning-reject">REJECTED</span></td>
 
@@ -85,11 +84,11 @@ const Applicants = () => (
                           </tr>
                           <tr>
                             <td align="center">
-                            Summer 2019 Finance Intern
+                            Community Outreach Coordinator
                             </td>
                             <td className="hidden-xs">5</td>
-                            <td>Jacob Bennet</td>
-                            <td>j.bennet02@cwru.com</td>
+                            <td>Marisa Ownum</td>
+                            <td>marisa.ownum@gmail.com</td>
                             <td></td>
                             <td><span className="pcoded-badge-accept label-accept label-warning-accept">ACCEPTED</span></td>
 
@@ -97,11 +96,11 @@ const Applicants = () => (
 
                           </tr>
                           <tr>
-                            <td align="center">Summer 2019 Finance Intern
+                            <td align="center">Community Outreach Coordinator
                             </td>
                             <td className="hidden-xs">6</td>
-                            <td>Cary Garfinkel</td>
-                            <td>cary.g22@gmail.com.com</td>
+                            <td>Leah Kane</td>
+                            <td>leahrkane@gmail.com</td>
                             <td></td>
                             <td><span className="pcoded-badge-accept label-accept label-warning-accept">ACCEPTED</span></td>
 
@@ -109,11 +108,11 @@ const Applicants = () => (
 
                           </tr>
                           <tr>
-                            <td align="center">Summer 2019 Finance Intern
+                            <td align="center">Assistant Store Manager
                             </td>
                             <td className="hidden-xs">7</td>
-                            <td>Maddy Dean</td>
-                            <td>maddy.dean@gmail.com</td>
+                            <td>Michael Steef</td>
+                            <td>mikesteef@gmail.com</td>
                             <td></td>
                             <td><span className="pcoded-badge-accept label-accept label-warning-accept">ACCEPTED</span></td>
                             
@@ -121,18 +120,18 @@ const Applicants = () => (
 
                           </tr>
                           <tr>
-                            <td align="center"> Pharmacy Manager
+                            <td align="center"> Assitant Store Manager
                             </td>
                             <td className="hidden-xs">8</td>
-                            <td>Dillon Stern</td>
-                            <td>d.stern@gmail.com</td>
+                            <td>Heather Gillan</td>
+                            <td>heathergillan22@gmail.com</td>
                             <td></td>
                             <td><span className="pcoded-badge-reject label-reject label-warning-reject">REJECTED</span></td>
 
 
                           </tr>
                           <tr>
-                            <td align="center">Pharmacy Manager
+                            <td align="center">Assistant Store Manager
                             </td>
                             <td className="hidden-xs">9</td>
                             <td>Thomas Defran</td>
@@ -143,22 +142,22 @@ const Applicants = () => (
 
                           </tr>
                           <tr>
-                            <td align="center">Pharmacy Manager
+                            <td align="center">Assistant Store Manager
                             </td>
                             <td className="hidden-xs">10</td>
-                            <td>Erica Cross</td>
-                            <td>e.cross1134@gmail.com</td>
+                            <td>Elise Stone</td>
+                            <td>e.stone1134@gmail.com</td>
                             <td></td>
                             <td><span className="pcoded-badge-accept label-accept label-warning-accept">ACCEPTED</span></td>
 
 
                           </tr>
                           <tr>
-                            <td align="center">Pharmacy Manager
+                            <td align="center">Assistant Store Manager
                             </td>
                             <td className="hidden-xs">11</td>
-                            <td>Marni Green</td>
-                            <td>marni.green@gmail.com</td>
+                            <td>Ruby Tage </td>
+                            <td>r.tage@gmail.com</td>
                             <td></td>
                             <td><span className="pcoded-badge-reject label-reject label-warning-reject">REJECTED</span></td>
 
@@ -175,12 +174,12 @@ const Applicants = () => (
                   </div>
                   <div className="col col-xs-8">
                     <ul className="pagination hidden-xs">
-                     <Link
-                     to="/applicants">
-                     <li><a href="#">1&nbsp; </a></li>
-                     </Link> 
-                     <Link 
-                     to="/applicants2">
+                        <Link 
+                        to="/applicants">
+                      <li><a href="#">1&nbsp; </a></li>
+                      </Link>
+                      <Link
+                      to="/applicants2">
                       <li><a href="#">2 &nbsp;</a></li>
                       </Link>
                       <li><a href="#">3 &nbsp;</a></li>
@@ -199,4 +198,4 @@ const Applicants = () => (
     
 )
 
-export default Applicants
+export default Applicants2
