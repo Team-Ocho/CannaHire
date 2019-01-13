@@ -42,12 +42,12 @@ const Sidebar = () => (
           Inbox <span class="pcoded-badge label label-danger">2</span>
         </Link>
         <Link
-          to="/saved-posts"
+          to="/settings"
           className={
-            window.location.pathname === "/saved-posts" ? "nav-link active" : "nav-link"
+            window.location.pathname === "/settings" ? "nav-link active" : "nav-link"
           }
-        > <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
-          Saved Posts
+        ><i class="fa fa-cog" aria-hidden="true">&nbsp;&nbsp;</i>
+          Settings
         </Link>
         <Link
           to="/logout"
