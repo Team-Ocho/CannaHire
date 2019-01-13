@@ -8,6 +8,14 @@
 	margin: 0;
 }
 
+.media-object {
+	height: 50%;
+	width: 100%;
+}
+
+.media-body {
+	padding-bottom: 0px;
+}
 
 .header {
     margin-top: 10px;
@@ -40,12 +48,7 @@
 * Featured Article Thumbnail
 * have a image and a text title.
 */
-.featured-article {
-	width: 482px;
-	height: 350px;
-	position: relative;
-	margin-bottom: 1em;
-}
+
 .learn-row-main {
 	display: flex;
 	/* margin-left: 50px; */

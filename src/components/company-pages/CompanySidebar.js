@@ -49,14 +49,7 @@ const CompanySidebar = () => (
         ><i class="fa fa-industry" aria-hidden="true">&nbsp;&nbsp;</i>
           Learn
         </Link>
-        <Link
-          to="/saved-posts"
-          className={
-            window.location.pathname === "/saved-posts" ? "nav-link active" : "nav-link"
-          }
-        ><i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
-          Saved Posts
-        </Link>
+    
         <Link
           to="/settings"
           className={
