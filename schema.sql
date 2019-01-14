@@ -33,3 +33,11 @@ CREATE TABLE job_postings (
   employee_requirements varchar(2500) NOT NULL,
   primary key (job_posting_id)
 );
+
+CREATE TABLE applicant_jobs (
+  foreign key user_id,
+  foreign key job_posting_id,
+  applicant_job_id INT AUTO_INCREMENT NOT NULL,
+  primary key (applicant_job_id)
+
+)
