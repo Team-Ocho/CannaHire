@@ -51,9 +51,9 @@ const CompanySidebar = () => (
         </Link>
     
         <Link
-          to="/settings"
+          to="/admin-settings"
           className={
-            window.location.pathname === "/settings" ? "nav-link active" : "nav-link"
+            window.location.pathname === "/admin-settings" ? "nav-link active" : "nav-link"
           }
         ><i class="fa fa-cog" aria-hidden="true">&nbsp;&nbsp;</i>
           Settings

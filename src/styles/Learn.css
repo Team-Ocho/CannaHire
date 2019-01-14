@@ -1,6 +1,9 @@
 .container-articles {
-    margin-left: 18em;
+	margin-left: 18em;
+	
 }
+
+
 /* image thumbnail */
 .thumb {
     display: block;
@@ -12,6 +15,15 @@
 	height: 50%;
 	width: 100%;
 }
+
+.col-md-3 .learn {
+	border-color: #4183D7;
+	border-style: solid;
+	border-width: 2px;
+	padding: 5px;
+	width: 70%;
+}
+
 
 .media-body {
 	padding-bottom: 0px;
@@ -54,6 +66,10 @@
 	/* margin-left: 50px; */
 
 
+}
+
+.row .media-list .main-list {
+	width: 1200px;
 }
 
 
@@ -118,7 +134,8 @@
 }
 
 .media-heading {
-    padding-left: 10px;
+	padding-left: 10px;
+	font-size: 16px;
 }
 
 .card :hover {
