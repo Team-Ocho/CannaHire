@@ -5,12 +5,10 @@ import { Component } from 'react';
 // import Modal from "../components/pages/Modal";
 
 class JobResults extends Component {
-  state = {
-    jobs: []
-  }
-
+    
   state ={
-      show: false
+    show: false,
+    jobs: []
   }
 
  showModal= () => {
@@ -40,7 +38,7 @@ class JobResults extends Component {
   render() {
     return (
       <div className="results-table">
-        <h3 className="results">Search Results</h3>{this.state.jobs.map((job) => {
+        <h3 className="results">Search Results</h3>{this.state.jobs.length>0 && this.state.jobs.map((job) => {
         return (
 
           <div className="card">
