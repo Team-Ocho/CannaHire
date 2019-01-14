@@ -35,8 +35,8 @@ CREATE TABLE job_postings (
 );
 
 CREATE TABLE applicant_jobs (
-  foreign key user_id,
-  foreign key job_posting_id,
+  user_id INT, /*foreign key to applicant_login */
+  job_posting_id INT, /*foreign key to job_postings */ 
   applicant_job_id INT AUTO_INCREMENT NOT NULL,
   primary key (applicant_job_id)
 
