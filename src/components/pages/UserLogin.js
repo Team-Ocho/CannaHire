@@ -51,7 +51,7 @@ class UserLogin extends Component {
         lastName: lName,
         email: email,
         password: password
-      }).then(function (data) {
+      }).then((data) => {
         console.log(data)
       })
     }

@@ -3,6 +3,7 @@ var mysql = require("mysql")
 var bodyParser = require("body-parser")
 var cookieParser = require("cookie-parser")
 const { check, validationResult } = require("express-validator/check")
+require("dotenv").config();
 
 // Authentication Routes
 const session = require("express-session")
@@ -17,25 +18,35 @@ app.use(bodyParser.json());
 
 app.use(cookieParser())
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
-  database: 'cannahire'
-})
+var PORT = process.env.PORT || 8080;
 
-connection.connect(err => {
-  if (err) {
-    return err
-  }
-})
+var connection;
+
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: process.env.db_host,
+    // Your port; if not 3306
+    port: process.env.db_port,
+    // Your username
+    user: process.env.db_user,
+    // Your password
+    password: process.env.db_password,
+    database: "cannahire"
+  });
+};
+
+connection.connect(function (err) {
+  if (err) throw err;
+  console.log("connected as id " + connection.threadId)
+});
 
 app.use(passport.initialize());
 app.use(passport.session());
 
 passport.use(new LocalStrategy(
   function (email, password, done) {
-    const connection = require("./config/connection.js")
 
     connection.query("SELECT user_id, password FROM applicant_login WHERE email = ?", [email], function (err, results, fields) {
       if (err) { done(err) }
@@ -120,6 +131,7 @@ app.post("/companyregister", function (req, res) {
 app.post('/login',
   passport.authenticate('local'),
   function (req, res) {
+    console.log("did something")
     // If this function gets called, authentication was successful.
     // `req.user` contains the authenticated user.
     res.redirect('/users/' + req.user.username);
@@ -133,6 +145,6 @@ app.get('/jobs/postings', function (req, res) {
   })
 })
 
-app.listen(8080, () => {
-  console.log('Server listening on port 8080')
+app.listen(PORT, () => {
+  console.log('Server listening on port ' + PORT)
 })
