@@ -8,7 +8,7 @@ const Sidebar = () => (
     <div className="dashboard-main">
       <ul className="sidenav">
         <img className="dashboard-logo" src={require('../assets/logo1.png')}></img>
-        <h3 className="hi">Hi Name!</h3>
+        <h3 className="hi">Hi Liz!</h3>
         <Link
           to="/search-jobs"
           className={
@@ -58,9 +58,9 @@ const Sidebar = () => (
           Logout
         </Link>
         <figure>
-        <img className="profile" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"></img>
-        <figcaption>Cleveland, OH</figcaption>
-        <figcaption>Financial Analyst</figcaption>
+        <img className="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJF3dBm9Y3xLJr21xlcPd2AdWvN3eIC82e8HDuRekX1qgwnxNiMQ" alt="Avatar"></img>
+        <figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Liz Stien</figcaption>
+        <figcaption>&nbsp;&nbsp;Marketing Manager</figcaption>
         </figure>
 
       </ul>

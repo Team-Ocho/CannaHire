@@ -2,6 +2,7 @@
 .box{
   padding:60px 0px;
   margin-left: 17.0rem;
+
 }
 
 .container-yourjobs {
@@ -10,6 +11,53 @@
 
 .view-more {
   margin-left: 55.0em;
+}
+/* 
+.test-class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+
+} */
+
+.close-modal {
+  float: right;
+  padding: 5px;
+  padding-right: 20px;
+}
+
+
+
+.modal-info {
+  padding: 15px;
+}
+.test {
+  box-shadow: 5px 5px 10px #353c4e;
+  margin-left: 5.0em;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  height: 55.0em;
+  border-color: #353c4e;
+  position: fixed;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+  /* transform: translate(-50%,-50%); */
+  
+  margin-top: -40.0em;
+
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -22,9 +70,14 @@
   border-style: solid;
   border-color: #4183D7;
   border-width: 1px;
+  height: 237px;
+  width: 252px;
+  margin-top: 10%;
   /* margin-left: 18.0rem; */
   
 }
+
+
 .text{
   margin:20px 0px;
 }
@@ -67,4 +120,8 @@ transition: all 0.3s ease-in-out;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.container-dashboard {
+  margin-top: 3%;
 }
