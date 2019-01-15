@@ -49,18 +49,11 @@ const CompanySidebar = () => (
         ><i class="fa fa-industry" aria-hidden="true">&nbsp;&nbsp;</i>
           Learn
         </Link>
+    
         <Link
-          to="/saved-posts"
+          to="/admin-settings"
           className={
-            window.location.pathname === "/saved-posts" ? "nav-link active" : "nav-link"
-          }
-        ><i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
-          Saved Posts
-        </Link>
-        <Link
-          to="/settings"
-          className={
-            window.location.pathname === "/settings" ? "nav-link active" : "nav-link"
+            window.location.pathname === "/admin-settings" ? "nav-link active" : "nav-link"
           }
         ><i class="fa fa-cog" aria-hidden="true">&nbsp;&nbsp;</i>
           Settings

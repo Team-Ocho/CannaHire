@@ -15,6 +15,9 @@ import Register from './components/pages/Register';
 import PostJob from './components/company-pages/PostJob';
 import YourJobs from './components/company-pages/YourJobs';
 import Login from './components/pages/Login';
+import Applicants2 from './components/company-pages/Applicants2';
+import Settings from './components/Settings';
+import AdminSettings from './components/company-pages/AdminSettings';
 
 
 
@@ -42,6 +45,9 @@ class App extends Component {
         <Route exact path="/post" component={Applicant}></Route>
         <Route exact path="/yourjobs" component={YourJobs}></Route>
         <Route exact path="/login" component={Login}></Route>
+        <Route exact path="/applicants2" component={Applicants2}></Route>
+        <Route exact path="/settings" component={Settings}></Route>
+        <Route exact path="/admin-settings" component={AdminSettings}></Route>
       </div>
       </Router>
     );    

@@ -2,11 +2,22 @@ import React from 'react';
 import "../styles/JobResults.css";
 import Axios from 'axios';
 import { Component } from 'react';
+// import Modal from "../components/pages/Modal";
 
 class JobResults extends Component {
-  state = {
+    
+  state ={
+    show: false,
     jobs: []
   }
+
+ showModal= () => {
+    this.setState({show:true});
+ };
+
+ hideModal = () => {
+     this.setState({show:false});
+ };
 
   componentDidMount() {
     this.renderPage()
@@ -27,17 +38,21 @@ class JobResults extends Component {
   render() {
     return (
       <div className="results-table">
-        <h3 className="results">Search Results</h3>{this.state.jobs.map((job) => {
+        <h3 className="results">Search Results</h3>{this.state.jobs.length>0 && this.state.jobs.map((job) => {
         return (
+
           <div className="card">
-            <div className="container">
+            <div className="container" onClick={this.showModal}>
               <h4><b>{job.job_title}</b></h4>
               <a className="list-group-item" href="#"><i className="fa fa-bookmark-o" aria-hidden="true"></i></a>
               <p>{job.company_name}</p> <p>{job.city_state}</p>
               <p>{job.job_description}</p>
               <footer className="card-footer">Keywords?:</footer>
+
             </div>
           </div>
+          
+          
         )
       })}
       </div>
