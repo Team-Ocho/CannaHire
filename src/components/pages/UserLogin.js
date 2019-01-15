@@ -37,15 +37,6 @@ class UserLogin extends Component {
       var email = this.state.email
       var password = this.state.password
       console.log(fName, lName, email, password)
-      var userInfo = {
-        firstName: fName,
-        lastName: lName,
-        email: email,
-        password: password,
-        // security: this.state.security,
-        // securityAnswer: this.state.securityAnswer
-      }
-      console.log(userInfo)
       axios.post("/register", {
         firstName: fName,
         lastName: lName,
