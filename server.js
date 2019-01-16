@@ -36,6 +36,22 @@ if (process.env.JAWSDB_URL) {
     database: "cannahire"
   });
 };
+let options = {
+  host: "localhost",
+  user: "root",
+  password: "root",
+  database: "cannahire"
+}
+
+var sessionStore = new MySQLStore(options);
+
+app.use(session({
+  secret: 'hsudhihsduiuh',
+  resave: false,
+  store: sessionStore,
+  saveUninitialized: false,
+  // cookie: { secure: true }
+}))
 
 connection.connect(function (err) {
   if (err) throw err;
@@ -47,7 +63,7 @@ app.use(passport.session());
 
 passport.use(new LocalStrategy(
   function (email, password, done) {
-
+    console.log("auth is goin")
     connection.query("SELECT user_id, password FROM applicant_login WHERE email = ?", [email], function (err, results, fields) {
       if (err) { done(err) }
 
@@ -69,7 +85,12 @@ passport.use(new LocalStrategy(
     })
   }
 ))
-
+app.post("/loginPLEASE", passport.authenticate(
+  "local", {
+      successRedirect: "/",
+      failureRedirect: "/register"
+  }
+))
 app.post("/register", function (req, res) {
   const errors = validationResult(req)
   console.log("Something happened Server")
@@ -92,7 +113,7 @@ app.post("/register", function (req, res) {
         const user_id = results[0]
 
         req.login(user_id, function (err) {
-          res.redirect("/")
+          res.end()
         })
       })
     })
@@ -128,7 +149,7 @@ app.post("/companyregister", function (req, res) {
   }
 })
 
-app.post('/login',
+app.post('/app/login',
   passport.authenticate('local'),
   function (req, res) {
     console.log("did something")

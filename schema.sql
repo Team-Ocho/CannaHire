@@ -40,4 +40,4 @@ CREATE TABLE applicant_jobs (
   applicant_job_id INT AUTO_INCREMENT NOT NULL,
   primary key (applicant_job_id)
 
-)
+);
