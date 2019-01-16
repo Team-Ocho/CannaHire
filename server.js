@@ -33,7 +33,7 @@ if (process.env.JAWSDB_URL) {
     user: process.env.db_user,
     // Your password
     password: process.env.db_password,
-    database: "canna_hire"
+    database: "cannahire"
   });
 };
 
