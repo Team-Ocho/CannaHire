@@ -4,33 +4,19 @@ CREATE DATABASE cannahire;
 USE cannahire;
 -- USE `hkbvtsjz9cohxt94`;
 
-CREATE TABLE applicant_login (
-  applicant_id INT AUTO_INCREMENT NOT NULL,
+CREATE TABLE user_login (
+  user_id INT AUTO_INCREMENT NOT NULL,
   first_name VARCHAR(200) NOT NULL,
   last_name VARCHAR(200) NOT NULL,
   email VARCHAR(200) NOT NULL,
+  phone varchar (200) NOT NULL,
+  description VARCHAR(2500),
   security_question VARCHAR(200) NOT NULL,
   security_answer VARCHAR(200) NOT NULL,
   user_img_url VARCHAR(2000),
   password VARCHAR(200) NOT NULL,
-  PRIMARY KEY (applicant_id)
-);
-
--- Host images somewhere else and store url for image in SQL(amazons3)--
-
-CREATE TABLE company_login (
-	company_id INT AUTO_INCREMENT NOT NULL,
-  first_name VARCHAR(200) NOT NULL,
-  last_name VARCHAR(200) NOT NULL,
-  company_name varchar(200) NOT NULL,
-  company_phone varchar (200) NOT NULL,
-  company_email varchar(200) NOT NULL,
-  company_description VARCHAR(2500),
-  security_question VARCHAR(200) NOT NULL,
-  security_answer VARCHAR(200) NOT NULL,
-  user_img_url VARCHAR(2000),
-  password VARCHAR(200) NOT NULL,
-  PRIMARY KEY (company_id)
+  corporate BOOLEAN NOT NULL,
+  PRIMARY KEY (user_id)
 );
 
 CREATE TABLE job_postings (
@@ -42,8 +28,8 @@ CREATE TABLE job_postings (
   job_description varchar(2500) NOT NULL,
   employee_requirements varchar(2500) NOT NULL,
   tags VARCHAR (200) NOT NULL,
-  primary key (job_posting_id),
-)
+  primary key (job_posting_id)
+);
 
 CREATE TABLE applicant_tracker (
   applicant_tracker_id INT AUTO_INCREMENT NOT NULL,
@@ -53,7 +39,8 @@ CREATE TABLE applicant_tracker (
   email VARCHAR(200) NOT NULL,
   new_applicant BOOLEAN NOT NULL,
   actions VARCHAR (100) NOT NULL,
-)
+  primary key (applicant_tracker_id)
+);
 
 CREATE TABLE applicant_jobs (
   job_posting_id INT AUTO_INCREMENT NOT NULL,
@@ -63,5 +50,5 @@ CREATE TABLE applicant_jobs (
   city varchar(200) NOT NULL,
   job_description varchar(2500) NOT NULL,
   employee_requirements varchar(2500) NOT NULL,
-  primary key (job_posting_id),
+  primary key (job_posting_id)
 );
