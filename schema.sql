@@ -43,7 +43,7 @@ CREATE TABLE job_postings (
   employee_requirements varchar(2500) NOT NULL,
   tags VARCHAR (200) NOT NULL,
   primary key (job_posting_id),
-)
+);
 
 CREATE TABLE applicant_tracker (
   applicant_tracker_id INT AUTO_INCREMENT NOT NULL,
@@ -53,7 +53,8 @@ CREATE TABLE applicant_tracker (
   email VARCHAR(200) NOT NULL,
   new_applicant BOOLEAN NOT NULL,
   actions VARCHAR (100) NOT NULL,
-)
+  primary key (applicant_tracker_id)
+);
 
 CREATE TABLE applicant_jobs (
   job_posting_id INT AUTO_INCREMENT NOT NULL,
