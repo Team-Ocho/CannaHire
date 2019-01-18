@@ -42,7 +42,7 @@ CREATE TABLE job_postings (
   job_description varchar(2500) NOT NULL,
   employee_requirements varchar(2500) NOT NULL,
   tags VARCHAR (200) NOT NULL,
-  primary key (job_posting_id),
+  primary key (job_posting_id)
 );
 
 CREATE TABLE applicant_tracker (
@@ -64,5 +64,5 @@ CREATE TABLE applicant_jobs (
   city varchar(200) NOT NULL,
   job_description varchar(2500) NOT NULL,
   employee_requirements varchar(2500) NOT NULL,
-  primary key (job_posting_id),
+  primary key (job_posting_id)
 );
