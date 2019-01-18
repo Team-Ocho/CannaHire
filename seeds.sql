@@ -2,19 +2,19 @@
 USE cannahire;
 
 INSERT INTO applicant_login
-(first_name, last_name, email, resume, cover_letter, password)
-VALUES ('Lauren', 'Santosuosso', 'noway@yahoo.com', 'resume here', 'Cover Letter would be put here', 'password');
+(first_name, last_name, email, password)
+VALUES ('Lauren', 'Santosuosso', 'noway@yahoo.com', 'password');
 
 INSERT INTO company_login
-(company_name, company_website, company_email, password)  
-VALUES ('Cresco Labs', 'www.crescolabs.com', 'hiring@crescolabs.com', 'password'),
-('Noa Botanicals', 'www.noacares.com', 'hiring@noabotanicals.com', 'password'),
-('Vangst Gigs', 'http://gigs.vangst.com', 'hiring@vangst.com', 'password'),
-('Heally', 'www.healy.com', 'hiring@healy.com', 'password'),
-('State of Utah', 'utah.gov', 'hiring@utah.gov', 'password'),
-('Virtual Vocations', 'www.jobrapido.com', 'hiring@virtualvocations.com', 'password'),
-('Truelieve', 'www.truelieve', 'hiring@truelieve.com', 'password'),
-('Cura Cannabis Solutions', 'www.curacannabis.com', 'hiring@cura.com', 'password');
+(company_name, company_email, password)  
+VALUES ('Cresco Labs', 'hiring@crescolabs.com', 'password'),
+('Noa Botanicals', 'hiring@noabotanicals.com', 'password'),
+('Vangst Gigs', 'hiring@vangst.com', 'password'),
+('Heally', 'hiring@healy.com', 'password'),
+('State of Utah', 'hiring@utah.gov', 'password'),
+('Virtual Vocations', 'hiring@virtualvocations.com', 'password'),
+('Truelieve', 'hiring@truelieve.com', 'password'),
+('Cura Cannabis Solutions',  'hiring@cura.com', 'password');
 
 INSERT INTO job_postings
 (job_title, company_name, city_state, job_description, employee_requirements)
