@@ -21,7 +21,7 @@ CREATE TABLE user_login (
   security_answer VARCHAR(200) NOT NULL,
   user_img_url VARCHAR(2000),
   password VARCHAR(200) NOT NULL,
-  corporate INT NOT NULL,
+  corporate BOOLEAN NOT NULL,
   PRIMARY KEY (id)
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE job_postings (
   city varchar(200) NOT NULL,
   job_description varchar(2500) NOT NULL,
   employee_requirements varchar(2500) NOT NULL,
-  tags VARCHAR (200) NOT NULL,
+  -- tags VARCHAR (200) NOT NULL,
   primary key (job_posting_id)
 );
 
@@ -58,5 +58,5 @@ CREATE TABLE applicant_jobs (
   city varchar(200) NOT NULL,
   job_description varchar(2500) NOT NULL,
   employee_requirements varchar(2500) NOT NULL,
-  primary key (job_posting_id),
+  primary key (job_posting_id)
 );
