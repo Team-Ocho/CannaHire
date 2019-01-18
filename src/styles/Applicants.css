@@ -1,0 +1,107 @@
+.container-applicants {
+margin-left: 18.0em;
+width: 96%;
+
+}
+
+.pagination {
+    text-align: center;
+    margin-left: -8.0em;
+}
+.close-modal {
+    float: right;
+    padding: 5px;
+    padding-right: 20px;
+  }
+  
+  
+  
+  .modal-info {
+    padding: 15px;
+  }
+  .test {
+    box-shadow: 5px 5px 10px #353c4e;
+    margin-left: 5.0em;
+    border-style: solid;
+    border-width: 1px;
+    width: 50%;
+    height: 55.0em;
+    border-color: #353c4e;
+    position: fixed;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    /* transform: translate(-50%,-50%); */
+    
+    margin-top: -40.0em;
+  
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+
+
+.panel-title {
+    margin-top: 1.250em;
+}
+
+tr:hover {
+    background-color: #ffff99;
+  }
+
+.pcoded-reject {
+    display: block;
+    font-size: 14px;
+    padding: 0 .938em;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+.label-reject {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: .003em;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+.label-warning-reject {
+    background: -webkit-gradient(linear, left top, right top, from(#f74646), to(#ec7575));
+    background: -webkit-linear-gradient(left, #f74646, #ec7575);
+    background: linear-gradient(to right, #f74646, #ec7575);
+    height: 10px;
+}
+
+.pcoded-accept {
+    display: block;
+    font-size: 14px;
+    padding: 0 .010em;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+.label-accept {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: .003em;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+.label-warning-accept {
+    background: -webkit-gradient(linear, left top, right top, from(#38a33e), to(#75ec85));
+    background: -webkit-linear-gradient(left, #38a33e, #75ec85);
+    background: linear-gradient(to right, #38a33e, #75ec85);
+    height: 10px;
+}
