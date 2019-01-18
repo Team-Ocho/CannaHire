@@ -32,29 +32,29 @@ We will be integrating a chat feature for our application that will connect comp
 
 ### Example of CannaHire Login Page 
 
-![Example of Login Page for M.U.D.U Site](./public/images/sign-in-page.png)
+![Example of Login Page for CannaHire Site](./public/images/sign-in-page.png)
 
 ### Example of CannaHire User Dashboard 
 
-![Example of Home Screen for M.U.D.U Site](./public/images/top-app-page.png)
+![Example of User Dashboard for CannaHire Site](./public/images/top-app-page.png)
 
-### Example of CannaHire Cannabis 101 Feature  
+### Example of CannaHire 'Cannabis 101' Feature  
 
-![Example of Home Screen for M.U.D.U Site](./public/images/middle-app-page.png)
+![Example of Cannabis 101 Feature](./public/images/middle-app-page.png)
 
-### Example of CannaHire Job Posting
+### Example of CannaHire Job Posting Board
 
-![Example of Home Screen for CannaHire Site](./public/images/bottom-app-pagr.png)
-
-
-### Example of CannaHire Job Search
-
-![Example of Home Screen for CannaHire Site](./public/images/bottom-app-pagr.png)
+![Example of CannaHire Job Posting Board](./public/images/bottom-app-pagr.png)
 
 
 ### Example of CannaHire Job Search
 
-![Example of Home Screen for CannaHire Site](./public/images/bottom-app-pagr.png)
+![Example of CannaHire Job Search](./public/images/bottom-app-pagr.png)
+
+
+### Example of CannaHire Saved Jobs
+
+![Example of Saved Jobs CannaHire Site](./public/images/bottom-app-pagr.png)
 
 
 ### Link to Video Walkthrough of CannaHire Site
