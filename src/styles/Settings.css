@@ -1,6 +1,8 @@
-.card {
+.card-settings {
     margin-top: 2%;
     background-color: white;
+    margin-left: 18.0em;
+    width: 80%;
 }
 
 .card-header {

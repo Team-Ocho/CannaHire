@@ -36,11 +36,10 @@
   margin-left: 45%;
 }
 
-
-
 .modal-info {
   padding: 15px;
 }
+
 .test {
   box-shadow: 5px 5px 10px #353c4e;
   margin-left: 5.0em;
@@ -66,10 +65,8 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-
-
 .box-part{
-  background:#FFF;
+  background:#e8e8e8;
   border-radius:0;
   padding:40px 10px;
   margin:10px 0px;
@@ -78,10 +75,8 @@
   border-width: 1px;
   height: 237px;
   width: 252px;
-  margin-top: 10%;
-  /* margin-left: 18.0rem; */
-  
-}
+ /* margin-top: 10% */
+ }  
 
 
 .text{
@@ -90,6 +85,7 @@
 
 .fa{
    color:#4183D7;
+   background-color: #e8e8e8;
 }
 
 /* .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item>li>a {

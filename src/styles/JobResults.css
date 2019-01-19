@@ -6,6 +6,54 @@
     background-color: #f1f1f1;
     
   }
+
+  .close-modal {
+    float: right;
+    padding: 5px;
+    padding-right: 20px;
+  }
+  
+  
+  
+  .job-info {
+    padding: 15px;
+    margin-top: 3%;
+    height: 42em;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    position: fixed;
+
+  }
+  .test-jobs {
+    box-shadow: 5px 5px 10px #353c4e;
+    margin-left: 40.0em;
+    border-style: solid;
+    border-width: 1px;
+    width: 38%;
+    height: 30.0em;
+    border-color: lightgrey;
+    position: fixed;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    /* transform: translate(-50%,-50%); */
+    
+    margin-top: -1.0em;
+  
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+
+
+.results-table {
+  width: 50%;
+}
   
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
@@ -18,8 +66,8 @@
 
 div .card {
     text-align: left;
-    width: 80%;
-    margin-left: 18.0em;
+    width: 100%;
+    /* margin-left: 18.0em; */
     padding-bottom: 1.7em;
     padding-top: .3em;
 }
