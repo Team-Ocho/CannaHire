@@ -50,9 +50,9 @@ width: 96%;
     margin-top: 1.250em;
 }
 
-tr:hover {
+/* tr:hover {
     background-color: #ffff99;
-  }
+  } */
 
 .pcoded-reject {
     display: block;

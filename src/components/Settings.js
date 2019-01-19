@@ -5,7 +5,7 @@ import "../styles/Settings.css";
 const Settings = () => (
     <div>
         <Sidebar />
-        <div class="card">
+        <div class="card-settings">
             <div class="card-header">
                 <h5>Setting Options</h5>
             </div>

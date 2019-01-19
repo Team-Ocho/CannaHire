@@ -4,8 +4,9 @@ import {Link} from "react-router-dom";
 
 const Sidebar = () => (
 
-
-    <div className="dashboard-main">
+    <div className="container">
+    <div className="row">
+    <div className="col-md-3">
       <ul className="sidenav">
         <img className="dashboard-logo" src={require('../assets/logo1.png')}></img>
         <h3 className="hi">Hi Liz!</h3>
@@ -64,7 +65,9 @@ const Sidebar = () => (
         </figure>
 
       </ul>
+      </div>
 
+    </div>
     </div>
 )
 
