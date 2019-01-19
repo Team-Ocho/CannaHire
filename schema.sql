@@ -43,7 +43,11 @@ CREATE TABLE applicant_tracker (
 );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> d8f51bcde11789d4b49186cd7cbc80bea189720a
 CREATE TABLE applicant_jobs (
   job_posting_id INT AUTO_INCREMENT NOT NULL,
   job_title varchar(200) NOT NULL,
@@ -53,5 +57,8 @@ CREATE TABLE applicant_jobs (
   job_description varchar(2500) NOT NULL,
   employee_requirements varchar(2500) NOT NULL,
   primary key (job_posting_id)
+<<<<<<< HEAD
 >>>>>>> 5cc6ebc0939b2a3bed155ba58a9e306bb9cf6c65
+=======
+>>>>>>> d8f51bcde11789d4b49186cd7cbc80bea189720a
 );
