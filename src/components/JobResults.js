@@ -37,8 +37,9 @@ class JobResults extends Component {
 
   render() {
     return (
-      <div className="results-table">
-        <h3 className="results">Search Results</h3>{this.state.jobs.length>0 && this.state.jobs.map((job) => {
+      <div className="row">
+        <div className='col-12'>
+        <h3 className="">Search Results</h3>{this.state.jobs.length>0 && this.state.jobs.map((job) => {
         return (
 
           <div className="card">
@@ -55,6 +56,7 @@ class JobResults extends Component {
           
         )
       })}
+      </div>
       </div>
     )
   }
