@@ -69,8 +69,8 @@
 
 
 .box-part{
-  background:#FFF;
-  border-radius:0;
+  background-color:#e8e8e8;
+  border-radius:150;
   padding:40px 10px;
   margin:10px 0px;
   border-style: solid;
