@@ -1,9 +1,8 @@
 
-.box{
+/* .box{
   padding:60px 0px;
   margin-left: 17.0rem;
-
-}
+} */
 
 .container-yourjobs {
   margin-left: 12.0em;
@@ -85,9 +84,9 @@
   margin:20px 0px;
 }
 
-.fa{
-   color:#4183D7;
-}
+/* .fa{
+   color: none;
+} */
 
 /* .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item>li>a {
   text-align: left;
