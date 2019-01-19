@@ -121,34 +121,6 @@ app.post("/register", function (req, res) {
   }
 })
 
-app.post("/companyregister", function (req, res) {
-  const errors = validationResult(req)
-  console.log("Something happened Server")
-  console.log(req.body)
-
-  if (!errors.isEmpty()) {
-    console.log(errors.mapped())
-    res.redirect("/register")
-  } else {
-    const companyName = req.body.companyName
-    const website = req.body.website
-    const password = req.body.password
-    const email = req.body.email
-
-    // Store hash in your password DB.
-    connection.query("INSERT INTO company_login (company_name, company_website, company_email, password) VALUES (?, ?, ?, ?)", [companyName, website, email, password], function (err, results, fields) {
-      if (err) throw err
-      connection.query("SELECT LAST_INSERT_ID() as user_id", function (error, results, fields) {
-        if (error) throw error
-        const user_id = results[0]
-
-        req.login(user_id, function (err) {
-          res.redirect("/")
-        })
-      })
-    })
-  }
-})
 
 app.post('/app/login',
   passport.authenticate('local'),

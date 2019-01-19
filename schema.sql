@@ -50,6 +50,7 @@ CREATE TABLE applicant_trackers (
   primary key (tracker_id)
 );
 
+
 CREATE TABLE applicant_jobs (
   job_posting_id INT AUTO_INCREMENT NOT NULL,
   job_title varchar(200) NOT NULL,

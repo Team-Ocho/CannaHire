@@ -2,22 +2,49 @@ import React from 'react';
 import "../styles/JobResults.css";
 import Axios from 'axios';
 import { Component } from 'react';
-// import Modal from "../components/pages/Modal";
+import Modal, { closeStyle } from 'simple-react-modal';
+
 
 class JobResults extends Component {
-    
-  state ={
+
+  state = {
     show: false,
-    jobs: []
+    jobs: [],
+    company_logo: "",
+    company_name: "",
+    job_title: "",
+    city_state: "",
+    job_description: "",
+    employee_requirements: "",
+    currJob: {}
   }
 
- showModal= () => {
-    this.setState({show:true});
- };
+  show = (data) => {
+    console.log("here");
+    // debugger;
+    console.log(data);
+    this.setState({ show: true, company_name: data.company_name, job_description: data.job_description })
+    console.log(this.state);
+    console.log(data.company_name);
+    console.log(data.job_description)
+  }
 
- hideModal = () => {
-     this.setState({show:false});
- };
+  close = () => {
+    console.log("close modal");
+    this.setState({ show: false })
+  }
+
+
+  switchJob(job) {
+    this.setState({ currJob: job })
+    
+    // var found = 
+    // this.jobs.find( x => x.job_posting_id === found) 
+    }
+  
+  onApply = () => {
+    alert("You applied to " + this.state.currJob.job_title + " at " + this.state.currJob.company_name + ".");
+  }
 
   componentDidMount() {
     this.renderPage()
@@ -25,96 +52,48 @@ class JobResults extends Component {
 
   renderPage = (event) => {
     Axios.get("/jobs/postings")
-    .then( (res) => {
-      console.log("Posts", res.data)
-      
-      this.setState({
-        jobs: res.data
-      })
-    })
-  }
+      .then((res) => {
+        console.log("Posts", res.data)
 
+        this.setState({
+          jobs: res.data
+        })
+      })
+  }
 
   render() {
     return (
       <div className="row">
-        <div className='col-12'>
-        <h3 className="">Search Results</h3>{this.state.jobs.length>0 && this.state.jobs.map((job) => {
-        return (
-
-          <div className="card">
-            <div className="container" onClick={this.showModal}>
-              <h4><b>{job.job_title}</b></h4>
-              <a className="list-group-item" href="#"><i className="fa fa-bookmark-o" aria-hidden="true"></i></a>
-              <p>{job.company_name}</p> <p>{job.city_state}</p>
-              <p>{job.job_description}</p>
-              <footer className="card-footer">Keywords?:</footer>
-
+      <div className="col-md-6">
+        <h3 className="results">Search Results</h3>{this.state.jobs.length > 0 && this.state.jobs.map((job) => {
+          return (
+            <div className="card" value={job.job_posting_id} onClick={() => this.switchJob(job)}>
+              <div className="container">
+                <h4><b>{job.job_title}</b></h4>
+                <a className="list-group-item" href="#"><i className="fa fa-bookmark" aria-hidden="true"></i></a>
+                <p>{job.company_name}</p> <p>{job.city_state}</p>
+                <p>{job.job_description}</p>
+                <footer className="card-footer">Keywords?:</footer>
+              </div>
             </div>
+          )
+        })}
+        </div>
+        <div className="col-md-6">
+          <div className="job-info">
+            <h5><b>{this.state.currJob.job_title}</b></h5>
+            <h5>{this.state.currJob.company_name}</h5>
+            <h5>{this.state.currJob.city_state}</h5>
+            <p>{this.state.currJob.job_description}</p>
+            <p>{this.state.currJob.employee_requirements}</p>
+            {/* <a className="close-job" onClick={this.close}>X</a> */}
+            <button onClick = {this.onApply}>Apply</button>
           </div>
-          
-          
-        )
-      })}
-      </div>
-      </div>
-    )
+        </div>
+      </div>)
   }
 }
 
 export default JobResults
 
 
-// <div className="results-table">
-//     <h3 className="results">Search Results</h3>
-//     <div className="card">
-//             <div className="container ">
-//                 <h4><b>Position</b></h4>
-//                 <a className="list-group-item" href="#"><i className="fa fa-bookmark-o" aria-hidden="true"></i></a>                   
-//                 <p>Company</p> <p>City, State</p>
-//                 <p>Lorem ipsum dolor sit amet, no placerat dissentias pro, vel scaevola iudicabit forensibus ei. Causae aliquid appetere usu no, cu sed nostro atomorum, ius in agam dissentiunt. Ipsum saepe platonem est ea, cum mutat labores ex, ut pro dicit homero. Et sit consul putant, his et wisi libris voluptatibus. Eu sed quando oporteat, vix ex aeterno ceteros. </p>
-//                 <footer className="card-footer">Keywords: Marketing, New York, Chicago, Social Media, Google Ads...</footer>
-//             </div>
-//     </div>
-//     <div className="card">
-//             <div className="container ">
-//                 <h4><b>Position</b></h4>
-//                 <a className="list-group-item" href="#"><i className="fa fa-bookmark-o" aria-hidden="true"></i></a>                   
-//                 <p>Company</p> <p>City, State</p>
-//                 <p>Lorem ipsum dolor sit amet, no placerat dissentias pro, vel scaevola iudicabit forensibus ei. Causae aliquid appetere usu no, cu sed nostro atomorum, ius in agam dissentiunt. Ipsum saepe platonem est ea, cum mutat labores ex, ut pro dicit homero. Et sit consul putant, his et wisi libris voluptatibus. Eu sed quando oporteat, vix ex aeterno ceteros. </p>
-//                 <footer className="card-footer">Keywords: Marketing, New York, Chicago, Social Media, Google Ads...</footer>
-//             </div>
-//     </div>
-//     <div className="card">
-//             <div className="container ">
-//                 <h4><b>Position</b></h4>
-//                 <a className="list-group-item" href="#"><i className="fa fa-bookmark-o" aria-hidden="true"></i></a>                 
-//                 <p>Company</p> <p>City, State</p>
-//                 <p>Lorem ipsum dolor sit amet, no placerat dissentias pro, vel scaevola iudicabit forensibus ei. Causae aliquid appetere usu no, cu sed nostro atomorum, ius in agam dissentiunt. Ipsum saepe platonem est ea, cum mutat labores ex, ut pro dicit homero. Et sit consul putant, his et wisi libris voluptatibus. Eu sed quando oporteat, vix ex aeterno ceteros. </p>
-//                 <footer className="card-footer">Keywords: Marketing, New York, Chicago, Social Media, Google Ads...</footer>
-//             </div>
-//     </div>
-//     <div className="card">
-//             <div className="container ">
-//                 <h4><b>Position</b></h4>
-//                 <a className="list-group-item" href="#"><i className="fa fa-bookmark-o" aria-hidden="true"></i></a>                  
-//                 <p>Company</p> <p>City, State</p>
-//                 <p>Lorem ipsum dolor sit amet, no placerat dissentias pro, vel scaevola iudicabit forensibus ei. Causae aliquid appetere usu no, cu sed nostro atomorum, ius in agam dissentiunt. Ipsum saepe platonem est ea, cum mutat labores ex, ut pro dicit homero. Et sit consul putant, his et wisi libris voluptatibus. Eu sed quando oporteat, vix ex aeterno ceteros. </p>
-//                 <footer className="card-footer">Keywords: Marketing, New York, Chicago, Social Media, Google Ads...</footer>
-//             </div>
-//     </div>
-
-//     <div className = "breadcrumbs">
-//     <a>1 </a>
-//     <a>2 </a>
-//     <a>3 </a>
-//     <a>4 </a>
-//     <a>...</a>
-//     </div>
-
-
-
-
-// </div>
-
-//     );
