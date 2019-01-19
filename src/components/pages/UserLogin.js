@@ -37,15 +37,6 @@ class UserLogin extends Component {
       var email = this.state.email
       var password = this.state.password
       console.log(fName, lName, email, password)
-      var userInfo = {
-        firstName: fName,
-        lastName: lName,
-        email: email,
-        password: password,
-        // security: this.state.security,
-        // securityAnswer: this.state.securityAnswer
-      }
-      console.log(userInfo)
       axios.post("/register", {
         firstName: fName,
         lastName: lName,
@@ -124,7 +115,7 @@ class UserLogin extends Component {
     
                                     <div className="form-group">
                                         <select className="form-control">
-                                            <option className="hidden" selected disabled>Please select your Sequrity Question</option>
+                                            <option className="hidden" selected disabled>Please select your Security Question</option>
                                             <option>What is your Birthdate?</option>
                                             <option>What is Your old Phone Number</option>
                                             <option>What is your Pet Name?</option>
@@ -133,7 +124,10 @@ class UserLogin extends Component {
                                     <div className="form-group">
                                         <input type="text" className="form-control" placeholder="Enter Your Answer *" value="" />
                                     </div>
-                                    <input onClick={this.userRegister} type="submit" className="btnRegister" value="Register" />
+                                    <Link
+                                    to="/login"
+                                    ><input onClick={this.userRegister} type="submit" className="btnRegister" value="Register" />
+                                    </Link>
                                 </div>
                             </div>
                         </div>
