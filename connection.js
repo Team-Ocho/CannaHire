@@ -20,7 +20,7 @@ if (process.env.JAWSDB_URL) {
   
     // Your password
     password:  process.env.db_password,
-    database: "canna_hire"
+    database: "cannahire"
   });
 };
   
