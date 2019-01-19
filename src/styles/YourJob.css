@@ -40,6 +40,8 @@
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin-top: -5px;
+  
 }
 
 .label-warning-jobinactive {
@@ -56,4 +58,5 @@
     position: relative;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    margin-top: -5px;
   }

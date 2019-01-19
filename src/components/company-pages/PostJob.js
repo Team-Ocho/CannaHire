@@ -123,15 +123,7 @@ class PostJob extends Component {
             </input>
 
             <label for="exampleFormControlTextarea1">Job Description (300 character min.)</label>
-            <textarea 
-            minlength= {300}
-            name="jobDescription" 
-            value={this.state.jobDescription} 
-            onChange={this.handleChange} 
-            className="form-control" 
-            id="exampleFormControlTextarea1" 
-            rows="3">
-            </textarea>
+            <textarea minlength={300} name="jobDescription" value={this.state.jobDescription} onChange={this.handleChange} className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
             <label for="exampleFormControlTextarea1">Job Requirements (300 character min.)</label>
             <textarea 
