@@ -19,8 +19,10 @@ class FindJob extends Component {
 
   render() {
     return (
-      <div>
+      <div className="row">
+        <div className="col-md-3">
         <Sidebar />
+        </div>
         <div className="container moveRightPlease">
         <div className="row">
 		      <div className="col-12 text-center">
@@ -32,9 +34,10 @@ class FindJob extends Component {
                     </div>
                 </div>
             </div>
+            <JobResults />
           </div>
 
-            <JobResults />
+            
       </div>
 
 
