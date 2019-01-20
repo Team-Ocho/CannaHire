@@ -37,7 +37,7 @@ class CompanyLogin extends Component {
                                 </li>
                             </ul>
                             <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3 class="register-heading">Apply as a Hirer</h3>
+                                <h3 class="register-heading">Register as an Employer</h3>
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
