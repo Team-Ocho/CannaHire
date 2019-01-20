@@ -39,7 +39,7 @@ const Register = () => (
         </ul>
         <div>
             <img className="register-logo" src={require('../../assets/logo1.png')}></img>
-            <h3 className="register-login">Welcome to Cannahire! <br></br>Let's get started.</h3>
+            <h3 className="register-login">Welcome to CannaHire! <br></br>Let's get started.</h3>
         </div>
 
         <div class="row">
