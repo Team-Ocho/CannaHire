@@ -74,7 +74,7 @@ class UserLogin extends Component {
                         <li className="nav-item">
                         <Link
                         to="/admin-login">
-                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employer</a>
                             </Link>
                         </li>
                     </ul>
@@ -97,14 +97,14 @@ class UserLogin extends Component {
                                     </div>
                                     <div className="form-group">
                                         <div className="maxl">
-                                            <label className="radio inline">
+                                            {/* <label className="radio inline">
                                                 <input type="radio" name="gender" value="male" checked></input>
                                                 <span> Male </span>
                                             </label>
                                             <label className="radio inline">
                                                 <input type="radio" name="gender" value="female"></input>
                                                 <span>Female </span>
-                                            </label>
+                                            </label> */}
                                         </div>
                                     </div>
                                 </div>
