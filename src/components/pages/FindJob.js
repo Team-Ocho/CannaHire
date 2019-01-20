@@ -19,8 +19,7 @@ class FindJob extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div className="col-md-3">
+        <div>
           <Sidebar />
           <div className="container-fluid moveRightPlease">
             <div className="row">
@@ -35,9 +34,7 @@ class FindJob extends Component {
               <JobResults />
             </div>
           </div>
-          <JobResults />
         </div>
-      </div>
 
 
     )
