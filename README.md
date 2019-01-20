@@ -15,6 +15,7 @@ The following NPM Packages are installed to run this app:
 * [newsapi](https://www.npmjs.com/package/newsapi)
 * [passport](https://www.npmjs.com/package/passport)
 * [should](https://www.npmjs.com/package/should)
+* [bcrypt](https://www.npmjs.com/package/bcrypt)
 
 ### CannaHire Site Walkthrough
 Upon the page loading, the user has the options: Register, Login, Find A Job & Post A Job.  The user can register as a Job Seeker or an Employer.  Once the user is authenticated through Passport, they are then brought to the user Dashboard. The user can also utilize our Cannabis 101 feature to learn about current events, hiring trends, laws and legislation in regards to this growing Industry.
