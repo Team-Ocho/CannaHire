@@ -54,7 +54,8 @@ CREATE TABLE applicant_trackers (
 
 CREATE TABLE companies (
    company_ID INT AUTO_INCREMENT NOT NULL,
-   company_name varchar(200) NOT NULL
+   company_name varchar(200) NOT NULL,
+   primary key (company_ID)
 );
 
 CREATE VIEW view_applicant_jobs as
