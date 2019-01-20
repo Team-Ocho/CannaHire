@@ -70,13 +70,13 @@ function Home() {
                 <h4 className = "intro">Discover your career in the cannabis industry.</h4>
             </header>
 
-            <div className="map-location">
+            {/* <div className="map-location">
             <form>
                 <input type="text" className="location" placeholder="City, State, Zipcode, or Job Title"></input>
                 <button className = "search">Search</button><br></br>
             </form>
         
-            </div>
+            </div> */}
 
             <div className = "screenshots">
             <h3>Search and apply for jobs.</h3>
