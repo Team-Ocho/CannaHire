@@ -32,7 +32,7 @@ class CompanyLogin extends Component {
                                 <li class="nav-item">
                                     <Link
                                         to="/admin-login">
-                                        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                                        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employer</a>
                                     </Link>
                                 </li>
                             </ul>
@@ -67,7 +67,7 @@ class CompanyLogin extends Component {
                                         </div>
                                         <div class="form-group">
                                             <select class="form-control">
-                                                <option class="hidden" selected disabled>Please select your Sequrity Question</option>
+                                                <option class="hidden" selected disabled>Please select your Security Question</option>
                                                 <option>What is your Birthdate?</option>
                                                 <option>What is Your old Phone Number</option>
                                                 <option>What is your Pet Name?</option>
