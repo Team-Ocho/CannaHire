@@ -46,7 +46,7 @@ CREATE TABLE applicant_trackers (
   last_name VARCHAR(200) NOT NULL,
   email VARCHAR(200) NOT NULL,
   new_applicant BOOLEAN NOT NULL,
-  actions VARCHAR (100) NOT NULL,
+  actions BOOLEAN NOT NULL,
   primary key (tracker_id)
 );
 
