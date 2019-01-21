@@ -60,7 +60,10 @@ class UserLogin extends Component {
                     <img src="https://cdn2.iconfinder.com/data/icons/circle-ux-ui/512/lock_half_background-512.png" alt="" />
                     <h3>Welcome</h3>
                     <p>Already a member?</p>
+                    <Link 
+                    to="/login">
                     <input type="submit" name="" value="Login" />
+                    </Link>
                 </div>
                 <div className="col-md-9 register-right">
                     <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -95,6 +98,7 @@ class UserLogin extends Component {
                                     <div className="form-group">
                                         <input onChange={this.handleChange} name="confirmPassword" type="password" className="form-control" placeholder="Confirm Password *" value={this.state.confirmPassword} />
                                     </div>
+
                                     <div className="form-group">
                                         <div className="maxl">
                                             {/* <label className="radio inline">
@@ -107,6 +111,7 @@ class UserLogin extends Component {
                                             </label> */}
                                         </div>
                                     </div>
+
                                 </div>
                                 <div className="col-md-6">
                                     <div className="form-group">
@@ -114,7 +119,7 @@ class UserLogin extends Component {
                                     </div>
     
                                     <div className="form-group">
-                                        <select className="form-control">
+                                        <select onChange = {this.handleChange} name="security" value={this.state.security} className="form-control">
                                             <option className="hidden" selected disabled>Please select your Security Question</option>
                                             <option>What is your Birthdate?</option>
                                             <option>What is Your old Phone Number</option>
@@ -122,7 +127,7 @@ class UserLogin extends Component {
                                         </select>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" className="form-control" placeholder="Enter Your Answer *" value="" />
+                                        <input onChange={this.handleChange} type="text" className="form-control" name="securityAnswer" placeholder="Enter Your Answer *" value={this.state.securityAnswer} />
                                     </div>
                                     <Link
                                     to="/login"

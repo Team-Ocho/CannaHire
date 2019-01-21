@@ -1,27 +1,36 @@
-
+ 
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    /* padding: 16px; */
-    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    /* text-align: left;
     background-color: #f1f1f1;
-    
-  }
-
-  .close-modal {
-    float: right;
+    margin-left: 15.0em; */
+    /* width: 20.0em; */
     padding: 5px;
-    padding-right: 20px;
+    /* margin-bottom: 5px; */
+    /* width: 38.0em; */
+    width: 38.0em;
+    margin-bottom: 5px;
+    
+  } 
+
+  .row .postings {
+    margin-left: 60%;    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  */
+
   }
   
-  
-  
+  .container-jobpostings{
+    width: 35.0em;
+    padding: 5px;
+  }
   .job-info {
+    margin-left: 20%;
     padding: 15px;
     margin-top: 3%;
     height: 42em;
-    width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    width: 39%;
+    box-shadow: 4px 8px 12px 4px rgba(0, 0, 0, 0.2); 
     position: fixed;
+    /* margin-left: 19.0em; */
 
   }
   .test-jobs {
@@ -64,13 +73,13 @@
     }
   }
 
-div .card {
+/* div .card {
     text-align: left;
     width: 100%;
     /* margin-left: 18.0em; */
-    padding-bottom: 1.7em;
-    padding-top: .3em;
-}
+    /* padding-bottom: 1.7em; */
+    /* padding-top: .3em; */
+/* } */ 
 
 .results {
     text-align: left;
@@ -104,3 +113,6 @@ div .card {
 /* .card :hover {
  background-color: white;
 } */
+
+
+
