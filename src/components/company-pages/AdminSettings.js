@@ -4,7 +4,7 @@ import CompanySidebar from "../company-pages/CompanySidebar";
 const AdminSettings = () => (
 <div>
 <CompanySidebar />
-<div class="card">
+<div class="card-settings">
 <div class="card-header">
 <h5>Setting Options</h5>
 </div>

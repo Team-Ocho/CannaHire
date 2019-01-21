@@ -19,29 +19,28 @@ class FindJob extends Component {
 
   render() {
     return (
-      <div>
-        <Sidebar />
-        <div className="container moveRightPlease">
-        <div className="row">
-		      <div className="col-12 text-center">
-            <div className="input-group" id="adv-search">
-            <h5 className="locationlabel">Location: <input type="text" className="searchform-control" placeholder="New York" /></h5>
-                
-                <h5 className="titlelabel">Job Title: <input type="text" className="searchform-control" placeholder="Financial Analyst" /></h5>
-                        <button type="submit" className="btn btn-primary searchsubmit">Search</button>
-                    </div>
-                </div>
-            </div>
-          </div>
 
-            <JobResults />
-      </div>
-
-
+       <div className="row">
+         <div className="col-md-3">
+           <Sidebar />
+           <div className="container-fluid moveRightPlease">
+             <div className="row">
+               <div className="col-md-8">
+                 <div className="input-group" id="adv-search">
+                   <h5 className="locationlabel">Location: <input type="text" className="searchform-control" placeholder="New York" /></h5>
+                   <h5 className="titlelabel">Job Title: <input type="text" className="searchform-control" placeholder="Financial Analyst" /></h5>
+                   <button type="submit" className="btn btn-primary searchsubmit">Search</button>
+                 </div>
+               </div>
+               <JobResults />
+             </div>
+           </div>
+       </div>
+       </div> 
     )
+  
+    }
   }
-
-}
 
 
 export default FindJob;

@@ -37,15 +37,6 @@ class UserLogin extends Component {
       var email = this.state.email
       var password = this.state.password
       console.log(fName, lName, email, password)
-      var userInfo = {
-        firstName: fName,
-        lastName: lName,
-        email: email,
-        password: password,
-        // security: this.state.security,
-        // securityAnswer: this.state.securityAnswer
-      }
-      console.log(userInfo)
       axios.post("/register", {
         firstName: fName,
         lastName: lName,
@@ -69,7 +60,10 @@ class UserLogin extends Component {
                     <img src="https://cdn2.iconfinder.com/data/icons/circle-ux-ui/512/lock_half_background-512.png" alt="" />
                     <h3>Welcome</h3>
                     <p>Already a member?</p>
+                    <Link 
+                    to="/login">
                     <input type="submit" name="" value="Login" />
+                    </Link>
                 </div>
                 <div className="col-md-9 register-right">
                     <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -83,7 +77,7 @@ class UserLogin extends Component {
                         <li className="nav-item">
                         <Link
                         to="/admin-login">
-                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employer</a>
                             </Link>
                         </li>
                     </ul>
@@ -104,18 +98,20 @@ class UserLogin extends Component {
                                     <div className="form-group">
                                         <input onChange={this.handleChange} name="confirmPassword" type="password" className="form-control" placeholder="Confirm Password *" value={this.state.confirmPassword} />
                                     </div>
+
                                     <div className="form-group">
                                         <div className="maxl">
-                                            <label className="radio inline">
+                                            {/* <label className="radio inline">
                                                 <input type="radio" name="gender" value="male" checked></input>
                                                 <span> Male </span>
                                             </label>
                                             <label className="radio inline">
                                                 <input type="radio" name="gender" value="female"></input>
                                                 <span>Female </span>
-                                            </label>
+                                            </label> */}
                                         </div>
                                     </div>
+
                                 </div>
                                 <div className="col-md-6">
                                     <div className="form-group">
@@ -123,17 +119,20 @@ class UserLogin extends Component {
                                     </div>
     
                                     <div className="form-group">
-                                        <select className="form-control">
-                                            <option className="hidden" selected disabled>Please select your Sequrity Question</option>
+                                        <select onChange = {this.handleChange} name="security" value={this.state.security} className="form-control">
+                                            <option className="hidden" selected disabled>Please select your Security Question</option>
                                             <option>What is your Birthdate?</option>
                                             <option>What is Your old Phone Number</option>
                                             <option>What is your Pet Name?</option>
                                         </select>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" className="form-control" placeholder="Enter Your Answer *" value="" />
+                                        <input onChange={this.handleChange} type="text" className="form-control" name="securityAnswer" placeholder="Enter Your Answer *" value={this.state.securityAnswer} />
                                     </div>
-                                    <input onClick={this.userRegister} type="submit" className="btnRegister" value="Register" />
+                                    <Link
+                                    to="/login"
+                                    ><input onClick={this.userRegister} type="submit" className="btnRegister" value="Register" />
+                                    </Link>
                                 </div>
                             </div>
                         </div>

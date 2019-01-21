@@ -69,7 +69,8 @@ class Applicants extends Component {
                         <td><span className="pcoded-badge label label-warning">NEW</span></td>
                         <td></td>
                       </tr>
-                      <tr>
+                      <tr onClick={()=> this.show({name:"Matt Tome", location:"San Jose, CA", resume:"", 
+                      coverletter:"Dear Sir or Madam, I am a hard-working and determined professional seeking an opportunity to succeed in a dynamic company such as yours. I am confident that my knowledge, ability and experience allow me to deliver successful results for any company in a range of administrative positions. Please allow me to highlight my key skills: able to effectively manage my time through careful planning and organization of work activities an aptitude for identifying and resolving problems efficiently excellent communication skills that result in positive interpersonal relationships a track record of meeting deadlines and producing accurate work of a high standard proven ability to make sound decisions based on valid information the capacity to learn and and apply new information quickly and accurately strong computer skills with proficiency in MS Office I am convinced that I can be an asset in any position requiring hard work, enthusiasm and reliability and I look forward to hearing from you in the near future. The enclosed resume expands on my qualifications and experience. Thank you for your time and consideration. Sincerely, Matt Tome"})}>
                         <td align="center">
                           Marketing Manager
                           </td>
@@ -81,7 +82,8 @@ class Applicants extends Component {
 
 
                       </tr>
-                      <tr>
+                      <tr onClick={()=> this.show({name:"John Teeger", location:"San Jose, CA", resume:"", 
+                      coverletter:"Dear Sir or Madam, I am a hard-working and determined professional seeking an opportunity to succeed in a dynamic company such as yours. I am confident that my knowledge, ability and experience allow me to deliver successful results for any company in a range of administrative positions. Please allow me to highlight my key skills: able to effectively manage my time through careful planning and organization of work activities an aptitude for identifying and resolving problems efficiently excellent communication skills that result in positive interpersonal relationships a track record of meeting deadlines and producing accurate work of a high standard proven ability to make sound decisions based on valid information the capacity to learn and and apply new information quickly and accurately strong computer skills with proficiency in MS Office I am convinced that I can be an asset in any position requiring hard work, enthusiasm and reliability and I look forward to hearing from you in the near future. The enclosed resume expands on my qualifications and experience. Thank you for your time and consideration. Sincerely, John Teeger"})}>
                         <td align="center">
                           Project Manager
                           </td>
@@ -89,11 +91,13 @@ class Applicants extends Component {
                         <td>John Teeger</td>
                         <td>jt1108@gmail.com</td>
                         <td></td>
-                        <td></td>
+                        <td><span className="pcoded-badge-reject label-reject label-warning-reject">REJECTED</span></td>
 
 
                       </tr>
-                      <tr>
+                      <tr onClick={()=> this.show({name:"Mindy Cane", location:"San Jose, CA", resume:"", 
+                      coverletter:"Dear Sir or Madam, I am a hard-working and determined professional seeking an opportunity to succeed in a dynamic company such as yours. I am confident that my knowledge, ability and experience allow me to deliver successful results for any company in a range of administrative positions. Please allow me to highlight my key skills: able to effectively manage my time through careful planning and organization of work activities an aptitude for identifying and resolving problems efficiently excellent communication skills that result in positive interpersonal relationships a track record of meeting deadlines and producing accurate work of a high standard proven ability to make sound decisions based on valid information the capacity to learn and and apply new information quickly and accurately strong computer skills with proficiency in MS Office I am convinced that I can be an asset in any position requiring hard work, enthusiasm and reliability and I look forward to hearing from you in the near future. The enclosed resume expands on my qualifications and experience. Thank you for your time and consideration. Sincerely, Mindy Cane",
+                      })}>
                         <td align="center">
                           Project Manager
                           </td>
@@ -105,7 +109,9 @@ class Applicants extends Component {
 
 
                       </tr>
-                      <tr>
+                      <tr  onClick={()=> this.show({name:"Jacob Bennet", location:"San Jose, CA", resume:"", 
+                      coverletter:"Dear Sir or Madam, I am a hard-working and determined professional seeking an opportunity to succeed in a dynamic company such as yours. I am confident that my knowledge, ability and experience allow me to deliver successful results for any company in a range of administrative positions. Please allow me to highlight my key skills: able to effectively manage my time through careful planning and organization of work activities an aptitude for identifying and resolving problems efficiently excellent communication skills that result in positive interpersonal relationships a track record of meeting deadlines and producing accurate work of a high standard proven ability to make sound decisions based on valid information the capacity to learn and and apply new information quickly and accurately strong computer skills with proficiency in MS Office I am convinced that I can be an asset in any position requiring hard work, enthusiasm and reliability and I look forward to hearing from you in the near future. The enclosed resume expands on my qualifications and experience. Thank you for your time and consideration. Sincerely, Jacob Bennet",
+                      })}>
                         <td align="center">
                           Summer 2019 Finance Intern
                           </td>
