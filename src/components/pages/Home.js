@@ -66,8 +66,8 @@ function Home() {
         <div className="home-body">
             <header className = "header">
                 <img src={require('../../assets/logo1.png')} className="logo"></img>                
-                <h1 className = "title">CANNAHIRE</h1>
-                <h4 className = "intro">Discover your career in the cannabis industry.</h4>
+                <h1 className = "title">CannaHire</h1>
+                <h4 className = "intro">Discover your career in the Cannabis Industry.</h4>
             </header>
 
             {/* <div className="map-location">
@@ -82,7 +82,7 @@ function Home() {
             <h3>Search and apply for jobs.</h3>
             <img className = "screenshot-images"href="" src ={require('../../assets/search.png')} alt=""></img>
 
-            <h3 className="top">Learn about the cannabis market.</h3>
+            <h3 className="top">Learn about the Cannabis Market.</h3>
             <img className = "screenshot-images"href="" src ={require('../../assets/learnscreenshot.png')} alt=""></img>
 
 
