@@ -1,5 +1,5 @@
 .register{
-    background: -webkit-linear-gradient(left, #50b118, #4dc3e4);
+    background: -webkit-linear-gradient(left, #5179AD, #455F60);
     margin-top: 3%;
     padding: 3%;
 }
@@ -121,8 +121,8 @@ margin-top: 20px;
 }
 .register .nav-tabs .nav-link.active{
     width: 100px;
-    color: #0062cc;
-    border: 2px solid #0062cc;
+    color: #5179AD;
+    border: 2px solid #455F60;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
@@ -130,5 +130,5 @@ margin-top: 20px;
     text-align: center;
     margin-top: 8%;
     margin-bottom: -15%;
-    color: #495057;
+    color: #5179AD;
 }

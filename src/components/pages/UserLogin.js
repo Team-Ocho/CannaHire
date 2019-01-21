@@ -77,7 +77,7 @@ class UserLogin extends Component {
                         <li className="nav-item">
                         <Link
                         to="/admin-login">
-                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employer</a>
                             </Link>
                         </li>
                     </ul>
@@ -98,6 +98,20 @@ class UserLogin extends Component {
                                     <div className="form-group">
                                         <input onChange={this.handleChange} name="confirmPassword" type="password" className="form-control" placeholder="Confirm Password *" value={this.state.confirmPassword} />
                                     </div>
+
+                                    <div className="form-group">
+                                        <div className="maxl">
+                                            {/* <label className="radio inline">
+                                                <input type="radio" name="gender" value="male" checked></input>
+                                                <span> Male </span>
+                                            </label>
+                                            <label className="radio inline">
+                                                <input type="radio" name="gender" value="female"></input>
+                                                <span>Female </span>
+                                            </label> */}
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div className="col-md-6">
                                     <div className="form-group">
