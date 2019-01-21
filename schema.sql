@@ -58,6 +58,17 @@ CREATE TABLE companies (
    primary key (company_ID)
 );
 
+CREATE TABLE applicant_jobs (
+  job_posting_id INT AUTO_INCREMENT NOT NULL,
+  job_title varchar(200) NOT NULL,
+  company_name varchar(200) NOT NULL,
+  state varchar(50) NOT NULL,
+  city varchar(200) NOT NULL,
+  job_description varchar(2500) NOT NULL,
+  employee_requirements varchar(2500) NOT NULL,
+  primary key (job_posting_id)
+);
+
 CREATE VIEW view_applicant_jobs as
 SELECT applicant_trackers.first_name, applicant_trackers.last_name, job_postings.job_title
 FROM applicant_trackers
@@ -68,3 +79,4 @@ CREATE VIEW view_company_jobs as
 SELECT companies.company_name, job_postings.job_title
 FROM companies
 INNER JOIN job_postings ON job_postings.company_id = companies.company_id (edited) 
+

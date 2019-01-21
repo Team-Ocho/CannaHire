@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 const Sidebar = () => (
 
   <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
+       <img className="dashboard-logo" src={require('../assets/logo1.png')}></img>
+
     <a className="navbar-brand js-scroll-trigger" href="#page-top">
       <span className="d-block d-lg-none">Cannahire</span>
       <span className="d-none d-lg-block">
