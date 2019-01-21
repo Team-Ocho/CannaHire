@@ -39,6 +39,13 @@ class Dashboard extends Component {
         return (
             <div>
                 <Sidebar />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-3">
+                        
+                        </div>
+                    </div>
+                </div>
                 <div className="container container-dashboard ">
                     <div className="row">
                         <div className="col-12 text-center">
