@@ -67,7 +67,7 @@ function Home() {
             <header className = "header">
                 <img src={require('../../assets/logo1.png')} className="logo"></img>                
                 <h1 className = "title">CannaHire</h1>
-                <h4 className = "intro">Discover your career in the Cannabis Industry.</h4>
+                <h4 className = "intro">Discover your Career in the Cannabis Industry.</h4>
             </header>
 
             {/* <div className="map-location">

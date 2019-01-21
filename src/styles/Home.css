@@ -1,7 +1,9 @@
 .header {
     text-align: center;
     font-size: 35px;
-    margin-top: 150px;
+    /* margin-top: 30px; */
+    /* margin-bottom: 60px; */
+    
     color: black;
     font-family: 'Lato', sans-serif;
     /* font-weight: 600; */
@@ -40,7 +42,7 @@ form {
     width: 70px;
 }
 .login {
-    color: blue;
+    color: #5179AD;
     background: none;
     border: none;
 }
@@ -54,6 +56,9 @@ form {
 }
 
 .screenshots {
+    background-color:#5179AD;
+    font: Cabin;
+    font-size: 30px;
     padding-top: 100px;
     text-align: center;
     /* padding-bottom: 100px; */

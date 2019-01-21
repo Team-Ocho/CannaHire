@@ -1,5 +1,5 @@
 .login-card {
-    box-shadow: 0 4px 8px 0 rgba(73, 122, 155, 0.774);
+    box-shadow: 0 4px 8px 0 rgb(81, 121, 173, 0.774);
     padding: .011em;
     text-align: center;
     background-color: #f1f1f1;
@@ -7,7 +7,7 @@
     height: 25.0em;
     margin-top: 10%;
     margin-left: 6.0em;
-    background-color: #353c4e;
+    background-color: #455F60;
 
 
     
