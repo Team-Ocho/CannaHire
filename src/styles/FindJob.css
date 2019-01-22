@@ -19,9 +19,14 @@
     margin-left: 10%;
 }
 
+.input-group {
+    margin-left: 27.0em;
+    display: -webkit-box;
+}
 
 .searchsubmit {
     height: 33px;
+    margin-top: 1.5em;
 }
 
 .btn-primary {

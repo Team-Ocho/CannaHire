@@ -63,17 +63,17 @@ class JobResults extends Component {
 
   render() {
     return (
-      <div className="row">
+      <div className="row postings">
       <div className="col-md-6">
         <h3 className="results">Search Results</h3>{this.state.jobs.length > 0 && this.state.jobs.map((job) => {
           return (
             <div className="card" value={job.job_posting_id} onClick={() => this.switchJob(job)}>
-              <div className="container">
+              <div className="container-jobpostings">
                 <h4><b>{job.job_title}</b></h4>
                 <a className="list-group-item" href="#"><i className="fa fa-bookmark" aria-hidden="true"></i></a>
                 <p>{job.company_name}</p> <p>{job.city_state}</p>
                 <p>{job.job_description}</p>
-                <footer className="card-footer">Keywords?:</footer>
+                {/* <footer className="card-footer">Keywords?:</footer> */}
               </div>
             </div>
           )
