@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import CompanySidebar from './CompanySidebar';
 import "../../styles/PostJob.css";
+var axios = require("axios")
 
 class PostJob extends Component {
   constructor(props) {
@@ -36,6 +37,11 @@ class PostJob extends Component {
     // event.preventDefault();
     event.target.reset();
     console.log(this.state);
+    var data = this.state
+    axios.post("/api/job/post", data)
+    .then(res => {
+      console.log(res)
+    })
   }
 
 
@@ -122,7 +128,7 @@ class PostJob extends Component {
             <label classNameName="tags" for="exampleFormControlSelect1">Tags </label>
             <input name="tags" value={this.state.tags} onChange={this.handleChange} type="text" className="form-control" id="exampleFormControlInputCity" placeholder="Marketing, Social Media, Graphic Design..."></input>
 
-            <button className="submit-job" type="submit" value="Submit">Submit</button>
+            <button className="submit-job" onClick={this.handleSubmit} type="submit" value="Submit">Submit</button>
           </form>
         </div>
       </div>

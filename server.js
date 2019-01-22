@@ -125,7 +125,7 @@ app.post("/register", function (req, res) {
 app.post('/app/login',
   passport.authenticate('local'),
   function (req, res) {
-    console.log("did something")
+    console.log("finished auth")
     // If this function gets called, authentication was successful.
     // `req.user` contains the authenticated user.
     res.end()
@@ -182,6 +182,7 @@ app.post('/api/user/applied/:id', function (req, res) {
 })
 
 app.get("/logout", function(req, res) {
+  console.log("logged out")
   req.logout()
   req.session.destroy()
   req.redirect("/")

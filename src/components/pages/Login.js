@@ -62,7 +62,9 @@ class Login extends Component {
                             <div className="forgot">
                                 <a href="reset.html">Forgot password?</a>
                             </div>
+                            <Link to="/dashboard">
                             <button onClick={this.handleLoginSubmit} type="button" className="btn btn-primary">Login</button>
+                            </Link>
                         </form>
                     </div>
                 </div>

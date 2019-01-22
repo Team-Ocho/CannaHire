@@ -1,8 +1,18 @@
 import React from 'react';
 import "../styles/Sidebar.css";
 import { Link } from "react-router-dom";
+import Axios from 'axios';
+
+// logoutFunc = () => {
+//   console.log("Logging Out")
+//   Axios.get("/logout")
+//   .then(res => {
+//     console.log(res)
+//   })
+// }
 
 const Sidebar = () => (
+
 
   <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
        <img className="dashboard-logo" src={require('../assets/logo1.png')}></img>
@@ -75,12 +85,12 @@ const Sidebar = () => (
           </li>
         </Link>
         <Link
-          to="/logout"
+          to="/"
           className={
             window.location.pathname === "/logout" ? "nav-link active" : "nav-link"
           }
         > <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about"><i className="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;&nbsp;</i>
+            <a className="nav-link js-scroll-trigger" href="/logout"><i className="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;&nbsp;</i>
             Logout</a>
             
           </li>
