@@ -1,9 +1,8 @@
 
-.box{
+/* .box{
   padding:60px 0px;
   margin-left: 17.0rem;
-
-}
+} */
 
 .container-yourjobs {
   margin-left: 12.0em;
@@ -65,9 +64,10 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-.box-part{
-  background:#e8e8e8;
-  border-radius:0;
+
+
+/* .box-part{
+  border-radius:150;
   padding:40px 10px;
   margin:10px 0px;
   border-style: solid;
@@ -75,18 +75,17 @@
   border-width: 1px;
   height: 237px;
   width: 252px;
- /* margin-top: 10% */
- }  
+  margin-top: 10%;  
+} */
 
 
 .text{
   margin:20px 0px;
 }
 
-.fa{
-   color:#4183D7;
-   background-color: #e8e8e8;
-}
+/* .fa{
+   color: none;
+} */
 
 /* .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item>li>a {
   text-align: left;
