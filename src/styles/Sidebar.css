@@ -1,19 +1,4 @@
-/* .sidenav {
-    height: 100%;
-    
-    width: 17%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #353c4e;
-    overflow-x: hidden;
-    margin-top: 0;
-  }
-  .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item>li>a {
-    text-align: left;
-    padding: 8px 15px;
-} */
+
 
 nav {
   background-color: #353c4e;
@@ -44,7 +29,7 @@ nav {
    color: white;
    font-size: 16px;
    margin-left: 10px;
-   /* text-align: center; */
+ 
  }
 
   
@@ -65,7 +50,7 @@ nav {
   .dashboard-main {
     background-color: white;
     background-image: none;
-    /* font-size: 14px; */
+
   }
 
   .dashboard-logo {
@@ -165,8 +150,7 @@ body {
   color: lightgrey;
   border: solid;
   border-width: 1px;
-  /* margin-left: 150px; */
-  /* float: left; */
+
   width: 100%;
   margin-left: 15%;
   padding-left: 130px;

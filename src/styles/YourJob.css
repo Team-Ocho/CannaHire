@@ -1,31 +1,30 @@
 
-.box{
+.box {
     padding:60px 0px;
     margin-left: 17.0rem;
 }
 
-.box-part{
-    background:#FFF;
+.box-part {
+    background:#e8e8e8;
     border-radius:0;
-    padding:40px 10px;
-    margin:10px 0px;
+    padding:40px 10px 10px 20px;
+    margin:20px 10px 10px 20px;
     border-style: solid;
+    height: 95%;
     border-color: #4183D7;
+
     border-width: 5px;
-    /* margin-left: 18.0rem; */
 }
-.text{
+
+.text {
     margin:20px 0px;
 }
 
-.fa{
+.fa {
      color:#4183D7;
 }
 
-/* .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item>li>a {
-    text-align: left;
-    padding: 8px 15px;
-} */
+
 .label-warning-jobactive {
   background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
   background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
