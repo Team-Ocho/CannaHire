@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import CompanySidebar from './CompanySidebar';
 import "../../styles/PostJob.css";
+var axios = require("axios")
 
 class PostJob extends Component {
   constructor(props) {
@@ -36,6 +37,11 @@ class PostJob extends Component {
     // event.preventDefault();
     event.target.reset();
     console.log(this.state);
+    var data = this.state
+    axios.post("/api/job/post", data)
+    .then(res => {
+      console.log(res)
+    })
   }
 
 
@@ -154,6 +160,7 @@ class PostJob extends Component {
             </button>
 
 
+            <button className="submit-job" onClick={this.handleSubmit} type="submit" value="Submit">Submit</button>
           </form>
         </div>
       </div>

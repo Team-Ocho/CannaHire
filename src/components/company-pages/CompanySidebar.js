@@ -81,7 +81,7 @@ const CompanySidebar = () => (
           </li>
         </Link>
         <Link
-          to="/logout"
+          to="/"
           className={
             window.location.pathname === "/logout" ? "nav-link active" : "nav-link"
           }
