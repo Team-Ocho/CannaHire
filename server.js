@@ -140,7 +140,15 @@ app.get('/jobs/postings', function (req, res) {
 })
 
 app.post('/jobs/post', function (req, res) {
-  connection.query("INSERT INTO jobs", function (err, result) {
+  connection.query("INSERT INTO job_postings SET ?", {
+    job_title: "",
+    level: "",
+    state: "",
+    city: "",
+    job_description: "",
+    employee_requirements: "",
+    company_ID: ""
+  }, function (err, result) {
     if (err) throw err
     
     res.json(result)
@@ -185,7 +193,7 @@ app.get("/logout", function(req, res) {
   console.log("logged out")
   req.logout()
   req.session.destroy()
-  req.redirect("/")
+  // req.redirect("/")
 })
 
 passport.serializeUser(function(user_id, done) {
