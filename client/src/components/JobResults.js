@@ -16,7 +16,8 @@ class JobResults extends Component {
     city_state: "",
     job_description: "",
     employee_requirements: "",
-    currJob: {}
+    currJob: {}, 
+    appliedSuccess: ""
   }
 
   show = (data) => {
@@ -36,15 +37,20 @@ class JobResults extends Component {
 
 
   switchJob(job) {
-    this.setState({ currJob: job })
+    this.setState({ currJob: job, appliedSuccess: "" });
     
-    // var found = 
-    // this.jobs.find( x => x.job_posting_id === found) 
+    // document.querySelector(".applied-success").append("");
+
+    
     }
   
   onApply = () => {
-    alert("You applied to " + this.state.currJob.job_title + " at " + this.state.currJob.company_name + ".");
+    this.setState({appliedSuccess: "You applied to " + this.state.currJob.job_title + " at " + this.state.currJob.company_name + "."})
+    console.log("apply!");
+    // this.renderPage();
+    // alert("You applied to " + this.state.currJob.job_title + " at " + this.state.currJob.company_name + ".");
   }
+
 
   componentDidMount() {
     this.renderPage()
@@ -67,7 +73,7 @@ class JobResults extends Component {
       <div className="col-md-6">
         <h3 className="results">Search Results</h3>{this.state.jobs.length > 0 && this.state.jobs.map((job) => {
           return (
-            <div className="card" value={job.job_posting_id} onClick={() => this.switchJob(job)}>
+            <div className="card" value={job.job_posting_id} onClick={() => this.switchJob(job) }>
               <div className="container-jobpostings">
                 <h4><b>{job.job_title}</b></h4>
                 <a className="list-group-item" href="#"><i className="fa fa-bookmark" aria-hidden="true"></i></a>
@@ -87,7 +93,8 @@ class JobResults extends Component {
             <p>{this.state.currJob.job_description}</p>
             <p>{this.state.currJob.employee_requirements}</p>
             {/* <a className="close-job" onClick={this.close}>X</a> */}
-            <button onClick = {this.onApply}>Apply</button>
+            <button onClick = {this.onApply}>Apply</button><br></br><br></br>
+            <h6>{this.state.appliedSuccess}</h6>
           </div>
         </div>
       </div>)

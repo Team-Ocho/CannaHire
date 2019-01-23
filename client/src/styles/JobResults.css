@@ -1,20 +1,16 @@
  
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-    /* text-align: left;
-    background-color: #f1f1f1;
-    margin-left: 15.0em; */
-    /* width: 20.0em; */
+
     padding: 5px;
-    /* margin-bottom: 5px; */
-    /* width: 38.0em; */
+
     width: 38.0em;
     margin-bottom: 5px;
     
   } 
 
   .row .postings {
-    margin-left: 60%;    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  */
+    margin-left: 60%;    
 
   }
   
@@ -30,7 +26,7 @@
     width: 39%;
     box-shadow: 4px 8px 12px 4px rgba(0, 0, 0, 0.2); 
     position: fixed;
-    /* margin-left: 19.0em; */
+  
 
   }
   .test-jobs {
@@ -44,7 +40,7 @@
     position: fixed;
     max-height: calc(100vh - 210px);
     overflow-y: auto;
-    /* transform: translate(-50%,-50%); */
+
     
     margin-top: -1.0em;
   
@@ -64,30 +60,24 @@
   width: 50%;
 }
   
-  /* Responsive columns - one column layout (vertical) on small screens */
+ 
   @media screen and (max-width: 600px) {
     .column {
       width: 80%;
       display: block;
-      /* margin-bottom: 20px; */
+
     }
   }
 
-/* div .card {
-    text-align: left;
-    width: 100%;
-    /* margin-left: 18.0em; */
-    /* padding-bottom: 1.7em; */
-    /* padding-top: .3em; */
-/* } */ 
+
 
 .results {
     text-align: left;
-    /* margin-left: 15.0em; */
+
 }
 
 .card-footer {
-    /* margin-bottom: -.05em; */
+
 }
 
 .col-3 {
@@ -95,7 +85,7 @@
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
-  /* margin-left: 10px; */
+
 }
 
 .breadcrumbs{
@@ -110,9 +100,6 @@
   color: black;
 }
 
-/* .card :hover {
- background-color: white;
-} */
 
 
 

@@ -30,7 +30,7 @@ width: 96%;
     position: fixed;
     max-height: calc(100vh - 210px);
     overflow-y: auto;
-    /* transform: translate(-50%,-50%); */
+  
     
     margin-top: -40.0em;
   
@@ -50,9 +50,6 @@ width: 96%;
     margin-top: 1.250em;
 }
 
-/* tr:hover {
-    background-color: #ffff99;
-  } */
 
 .pcoded-reject {
     display: block;
