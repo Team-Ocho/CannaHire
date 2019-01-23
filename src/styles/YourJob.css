@@ -1,24 +1,25 @@
 
-.box{
+.box {
     padding:60px 0px;
     margin-left: 17.0rem;
 }
 
-.box-part{
-    background:#FFF;
+.box-part {
+    background:#e8e8e8;
     border-radius:0;
     padding:40px 10px;
     margin:10px 0px;
-    border-style: solid;
+    border-style: none;
+    height: 95%;
     border-color: #4183D7;
     border-width: 1px;
-    /* margin-left: 18.0rem; */
+    /* margin-left: 18.0rem;*/
 }
-.text{
+.text {
     margin:20px 0px;
 }
 
-.fa{
+.fa {
      color:#4183D7;
 }
 
