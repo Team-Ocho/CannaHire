@@ -74,9 +74,10 @@ function userRoutes (connection) {
         });
       
       router.get("/logout", function(req, res) {
+        console.log("logged out")
         req.logout()
         req.session.destroy()
-        req.redirect("/")
+        // req.redirect("/")
       })
 
       return router
