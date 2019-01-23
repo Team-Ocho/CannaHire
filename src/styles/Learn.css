@@ -3,8 +3,6 @@
 	
 }
 
-
-/* image thumbnail */
 .thumb {
     display: block;
 	width: 100%;
@@ -18,8 +16,11 @@
 
 .col-md-3 .learn {
 	border-color: #4183D7;
-	border-style: solid;
-	border-width: 2px;
+	border-style: none;
+	background-color: #e8e8e8;
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	padding: 5px;
 	width: 70%;
 }
@@ -40,7 +41,7 @@
 	display: contents;
 }
 
-/* Style to article Author */
+
 .by-author {
 	font-style: italic;
 	line-height: 1.3;
@@ -50,20 +51,15 @@
 
 .learn-row {
 	margin-left: 10px;
-	/* float: left; */
+
 }
 
 
 
-/* Main Article [Module]
--------------------------------------
-* Featured Article Thumbnail
-* have a image and a text title.
-*/
 
 .learn-row-main {
 	display: flex;
-	/* margin-left: 50px; */
+
 
 
 }
@@ -74,18 +70,18 @@
 
 
 .featured-article .block-title {
-	/* Position & Box Model */
+
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	z-index: 1;
-	/* background */
+
 	background: rgba(0,0,0,0.7);
-	/* Width/Height */
+
 	padding: .5em;
 	width: 100%;
 	
-	/* Text color */
+
 	color: #fff;
 }
 
@@ -106,11 +102,6 @@
     max-width: 52%;
 }
 }
-
-/* Featured Articles List [BS3]
---------------------------------------------
-* show the last 3 articles post
-*/
 
 .main-list {
 	padding-left: .5em;

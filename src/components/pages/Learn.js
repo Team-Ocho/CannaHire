@@ -4,6 +4,7 @@ import Sidebar from "../Sidebar";
 import API from '../../utils/API'
 import { SSL_OP_SINGLE_DH_USE } from 'constants';
 
+
 class Learn extends React.Component {
     state = {
         articles: []
@@ -34,7 +35,7 @@ class Learn extends React.Component {
                     <ul class="row media-list main-list">
                         {this.state.articles.map(({author, title, url, urlToImage }) => {
                             return (
-                                <li className="col-lg-3 col-md-3 col-sm-3 learn" style={{borderStyle:"solid", borderColor:"#4183D7", borderWidth:"1px", padding:"5px", margin:"2px"}}>
+                                <li className="col-lg-3 col-md-3 col-sm-3 learn" style={{borderStyle:"none", borderColor:"#4183D7", borderWidth:"1px", backgroundColor:"#e8e8e8", padding:"5px", margin:"2px"}}>
                                     <a className="pull-left" href={url}>
                                         <img className="media-object" src={urlToImage} alt="Article"/>
                                     </a>
