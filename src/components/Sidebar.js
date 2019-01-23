@@ -99,10 +99,9 @@ class Sidebar extends Component {
           </ul>
         </div>
       </nav>
-
-
     )
   }
 }
+export default Sidebar;
 
 
