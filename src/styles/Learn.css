@@ -8,13 +8,12 @@
 	width: 100%;
 	margin: 0;
 }
-
 .media-object {
 	height: 50%;
 	width: 100%;
 }
 
-.col-md-3 .learn {
+.col-md-4 .learn {
 	border-color: #4183D7;
 	border-style: none;
 	background-color: #e8e8e8;
