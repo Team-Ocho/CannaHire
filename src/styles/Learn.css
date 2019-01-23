@@ -3,8 +3,6 @@
 	
 }
 
-
-/* image thumbnail */
 .thumb {
     display: block;
 	width: 100%;
@@ -43,7 +41,7 @@
 	display: contents;
 }
 
-/* Style to article Author */
+
 .by-author {
 	font-style: italic;
 	line-height: 1.3;
@@ -53,20 +51,15 @@
 
 .learn-row {
 	margin-left: 10px;
-	/* float: left; */
+
 }
 
 
 
-/* Main Article [Module]
--------------------------------------
-* Featured Article Thumbnail
-* have a image and a text title.
-*/
 
 .learn-row-main {
 	display: flex;
-	/* margin-left: 50px; */
+
 
 
 }
@@ -77,18 +70,18 @@
 
 
 .featured-article .block-title {
-	/* Position & Box Model */
+
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	z-index: 1;
-	/* background */
+
 	background: rgba(0,0,0,0.7);
-	/* Width/Height */
+
 	padding: .5em;
 	width: 100%;
 	
-	/* Text color */
+
 	color: #fff;
 }
 
@@ -109,11 +102,6 @@
     max-width: 52%;
 }
 }
-
-/* Featured Articles List [BS3]
---------------------------------------------
-* show the last 3 articles post
-*/
 
 .main-list {
 	padding-left: .5em;

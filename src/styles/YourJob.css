@@ -23,10 +23,7 @@
      color:#4183D7;
 }
 
-/* .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item>li>a {
-    text-align: left;
-    padding: 8px 15px;
-} */
+
 .label-warning-jobactive {
   background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
   background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
