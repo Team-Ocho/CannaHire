@@ -1,11 +1,12 @@
 
 
 .container-yourjobs {
-  margin-left: 12.0em;
+  margin-left: 18.0em;
+  margin-top: 2%;
 }
 
 .view-more {
-  margin-left: 55.0em;
+  margin-left: 70.0em;
 }
 
 .close-modal {
@@ -22,6 +23,7 @@
 
 .modal-info {
   padding: 15px;
+  
 }
 
 .test {
@@ -35,7 +37,9 @@
   position: fixed;
   max-height: calc(100vh - 210px);
   overflow-y: auto;
-  margin-top: -40.0em;
+  /* transform: translate(-50%,-50%); */
+  
+  /* margin-top: -40.0em; */
 
 }
 .modal {
@@ -46,6 +50,24 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
+
+
+
+.box-part{
+  background:#FFF;
+  border-radius:0;
+  /* padding:40px 10px; */
+  margin:10px 0px;
+  border-style: solid;
+  border-color: #4183D7;
+  border-width: 1px;
+  height: 237px;
+  width: 252px;
+  margin-top: 10%;
+  /* margin-left: 18.0rem; */
+  
+}
+
 
 .text{
   margin:20px 0px;
