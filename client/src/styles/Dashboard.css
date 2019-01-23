@@ -1,0 +1,111 @@
+
+
+.container-yourjobs {
+  margin-left: 18.0em;
+  margin-top: 2%;
+}
+
+.view-more {
+  margin-left: 70.0em;
+}
+
+.close-modal {
+  float: right;
+  padding: 5px;
+  padding-right: 20px;
+}
+
+.company-logos {
+  width: 15%;
+  height: 15%;
+  margin-left: 45%;
+}
+
+.modal-info {
+  padding: 15px;
+  
+}
+
+.test {
+  box-shadow: 5px 5px 10px #353c4e;
+  margin-left: 5.0em;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  height: 55.0em;
+  border-color: #353c4e;
+  position: fixed;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+  /* transform: translate(-50%,-50%); */
+  
+  /* margin-top: -40.0em; */
+
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.box-part{
+  background:#FFF;
+  border-radius:0;
+  /* padding:40px 10px; */
+  margin:10px 0px;
+  border-style: solid;
+  border-color: #4183D7;
+  border-width: 1px;
+  height: 237px;
+  width: 252px;
+  margin-top: 10%;
+  /* margin-left: 18.0rem; */
+  
+}
+
+
+.text{
+  margin:20px 0px;
+}
+
+
+.label-warning-jobactive {
+background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
+background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
+background: -webkit-gradient(linear, left top, right top, from(#05a041), to(#43c469));
+background: linear-gradient(to right, #05a041, #43c469);
+}
+.pcoded-badge-jobactive  {
+display: block;
+font-size: 14px;
+padding: 0 15px;
+text-decoration: none;
+position: relative;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.label-warning-jobinactive {
+  background: -webkit-gradient(linear, left top, right top, from(#d42d2d), to(#f07171));
+  background: -webkit-gradient(linear, left top, right top, from(#d42d2d), to(#f07171));
+  background: -webkit-gradient(linear, left top, right top, from(#d42d2d), to(#f07171));
+  background: linear-gradient(to right, #d42d2d, #f07171);
+}
+.pcoded-badge-jobinactive  {
+  display: block;
+  font-size: 14px;
+  padding: 0 15px;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container-dashboard {
+  margin-top: 3%;
+}
