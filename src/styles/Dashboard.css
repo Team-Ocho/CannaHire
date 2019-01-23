@@ -6,11 +6,12 @@
 }
 
 .container-yourjobs {
-  margin-left: 12.0em;
+  margin-left: 18.0em;
+  margin-top: 2%;
 }
 
 .view-more {
-  margin-left: 55.0em;
+  margin-left: 70.0em;
 }
 /* 
 .test-class {
@@ -40,6 +41,7 @@
 
 .modal-info {
   padding: 15px;
+  
 }
 .test {
   box-shadow: 5px 5px 10px #353c4e;
@@ -54,7 +56,7 @@
   overflow-y: auto;
   /* transform: translate(-50%,-50%); */
   
-  margin-top: -40.0em;
+  /* margin-top: -40.0em; */
 
 }
 .modal {
@@ -71,7 +73,7 @@
 .box-part{
   background:#FFF;
   border-radius:0;
-  padding:40px 10px;
+  /* padding:40px 10px; */
   margin:10px 0px;
   border-style: solid;
   border-color: #4183D7;

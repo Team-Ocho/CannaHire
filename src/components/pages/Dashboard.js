@@ -39,18 +39,6 @@ class Dashboard extends Component {
         return (
             <div>
                 <Sidebar />
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-3">
-                        
-                        </div>
-                    </div>
-                </div>
-                <div className="container container-dashboard ">
-                    <div className="row">
-                        <div className="col-12 text-center">
-                    </div>
-                </div>
                     <div className="container-yourjobs">
                         <h3>Jobs You've Applied To</h3>
                             <div class="row">
@@ -204,9 +192,9 @@ class Dashboard extends Component {
 
                         </div>
                     </div>
-                </div>
+                {/* </div>
                 <div>
-                </div>
+                </div> */}
 
                 <div>
                     <Modal animationType="fade"
@@ -235,7 +223,7 @@ class Dashboard extends Component {
                     </Modal>
                 </div>
 
-            </div>
+             </div>
 
 
 
