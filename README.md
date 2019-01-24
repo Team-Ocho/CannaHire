@@ -31,31 +31,54 @@ We will be integrating a chat feature for our application that will connect comp
 
 ## Screenshots of Site
 
+### Example of CannaHire Registration Page 
+
+![Example of Registration Page for CannaHire Site](./src/assets/registration-page-1.png)
+
+### Example of CannaHire Employer Registration Page 
+
+![Example of Login Page for CannaHire Site](./src/assets/employer-registration.png)
+
 ### Example of CannaHire Login Page 
 
-![Example of Login Page for CannaHire Site](./public/images/sign-in-page.png)
+![Example of Login Page for CannaHire Site](./src/assets/login-page.png)
 
-### Example of CannaHire User Dashboard 
+### Example of CannaHire Employer Dashboard 
 
-![Example of User Dashboard for CannaHire Site](./public/images/top-app-page.png)
+![Example of User Dashboard for CannaHire Site](./src/assets/applicant-tracker.png)
+
+### Example of CannaHire Applicant Dashboard 
+
+![Example of User Dashboard for CannaHire Site](./src/assets/applied-job-tracker.png)
 
 ### Example of CannaHire 'Cannabis 101' Feature  
 
-![Example of Cannabis 101 Feature](./public/images/middle-app-page.png)
+![Example of Cannabis 101 Feature](./src/assets/cannabis-101.png)
 
 ### Example of CannaHire Job Posting Board
 
-![Example of CannaHire Job Posting Board](./public/images/bottom-app-pagr.png)
+![Example of CannaHire Job Posting Board](./src/assets/job-post.png)
 
 
-### Example of CannaHire Job Search
+### Example of CannaHire Job Search & Job Application
 
-![Example of CannaHire Job Search](./public/images/bottom-app-pagr.png)
+![Example of CannaHire Job Search & Job Application](./src/assets/job-search-apply.png)
 
+### Example of CannaHire Jobs Posting Tracker
+
+![Example of Saved Jobs CannaHire Site](./src/assets/job-post-tracker.png)
 
 ### Example of CannaHire Saved Jobs
 
 ![Example of Saved Jobs CannaHire Site](./public/images/bottom-app-pagr.png)
+
+### Example of CannaHire Messages Page 
+
+![Example of Messages Page for CannaHire Site](./src/assets/message-page.png)
+
+### Example of CannaHire Setting Page 
+
+![Example of Settings Page for CannaHire Site](./src/assets/settings.png)
 
 
 ### Link to Video Walkthrough of CannaHire Site
