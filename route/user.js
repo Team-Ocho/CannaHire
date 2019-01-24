@@ -5,33 +5,6 @@ const { validationResult } = require("express-validator/check")
 const router = express.Router()
 
 function userRoutes (connection) {
-    passport.use(new LocalStrategy(
-        { usernameField: 'email' },
-        function (email, password, done) {
-          console.log("auth is goin")
-          connection.query("SELECT id, password FROM user_login WHERE email = ?", [email], function (err, results, fields) {
-            if (err) { done(err) }
-      
-            if (results.length === 0) {
-              done(null, false)
-            } else {
-              const hash = results[0].password.toString()
-              bcrypt.compare(password, hash, function (err, response) {
-      
-                if (response === true) {
-                  console.log(results[0])
-                  console.log("log in totally worked")
-                  return done(null, { user_id: results[0].id })
-      
-                } else {
-                  console.log("WRONG!")
-                  return done(null, false)
-                }
-              })
-            }
-          })
-        }
-      ))
 
     router.post("/register", function (req, res) {
         const errors = validationResult(req)
