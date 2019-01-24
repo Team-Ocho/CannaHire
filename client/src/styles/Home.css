@@ -18,6 +18,11 @@
     padding-bottom: 20px;
 }
 
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
 .intro {
     font-size: 25px;
     font-family: 'Lato', sans-serif;
