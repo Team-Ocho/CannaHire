@@ -68,7 +68,7 @@ class UserLogin extends Component {
                   <Link
                     to="/user-login"
                   >
-                    <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                    <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Applicant</a>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -80,7 +80,7 @@ class UserLogin extends Component {
               </ul>
               <div className="tab-content" id="myTabContent">
                 <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <h3 className="register-heading">Apply as an Employee</h3>
+                  <h3 className="register-heading">Register as an Applicant</h3>
                   <div className="row register-form">
                     <div className="col-md-6">
                       <div className="form-group">
