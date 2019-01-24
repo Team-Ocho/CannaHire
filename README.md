@@ -37,7 +37,7 @@ We will be integrating a chat feature for our application that will connect comp
 
 ### Example of CannaHire Employer Registration Page 
 
-![Example of Login Page for CannaHire Site](./src/assets/employer-registration.png)
+![Example of Employer Registration Page for CannaHire Site](./src/assets/employer-registration.png)
 
 ### Example of CannaHire Login Page 
 
@@ -45,11 +45,11 @@ We will be integrating a chat feature for our application that will connect comp
 
 ### Example of CannaHire Employer Dashboard 
 
-![Example of User Dashboard for CannaHire Site](./src/assets/applicant-tracker.png)
+![Example of Employer Dashboard for CannaHire Site](./src/assets/applicant-tracker.png)
 
 ### Example of CannaHire Applicant Dashboard 
 
-![Example of User Dashboard for CannaHire Site](./src/assets/applied-job-tracker.png)
+![Example of Applicant Dashboard for CannaHire Site](./src/assets/applied-job-tracker.png)
 
 ### Example of CannaHire 'Cannabis 101' Feature  
 
@@ -59,14 +59,13 @@ We will be integrating a chat feature for our application that will connect comp
 
 ![Example of CannaHire Job Posting Board](./src/assets/job-post.png)
 
-
 ### Example of CannaHire Job Search & Job Application
 
 ![Example of CannaHire Job Search & Job Application](./src/assets/job-search-apply.png)
 
-### Example of CannaHire Jobs Posting Tracker
+### Example of CannaHire Job Posting Tracker
 
-![Example of Saved Jobs CannaHire Site](./src/assets/job-post-tracker.png)
+![Example of Job Posting Tracker CannaHire Site](./src/assets/job-post-tracker.png)
 
 ### Example of CannaHire Saved Jobs
 
