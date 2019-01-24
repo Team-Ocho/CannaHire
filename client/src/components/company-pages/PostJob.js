@@ -152,12 +152,12 @@ class PostJob extends Component {
             id="exampleFormControlInputCity" 
             placeholder="Marketing, Social Media, Graphic Design...">
             </input>
-
+{/* 
             <button 
             className="submit-job" 
             type="submit" 
             value="Submit">Submit
-            </button>
+            </button> */}
 
 
             <button className="submit-job" onClick={this.handleSubmit} type="submit" value="Submit">Submit</button>
