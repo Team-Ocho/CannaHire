@@ -33,7 +33,7 @@ We will be integrating a chat feature for our application that will connect comp
 
 ### Example of CannaHire Registration Page 
 
-![Example of Registration Page for CannaHire Site](./src/assets/registration-page-1.png)
+![Example of Registration Page for CannaHire Site](client/src/assets/registration-page-1.png)
 
 ### Example of CannaHire Employer Registration Page 
 
@@ -66,10 +66,6 @@ We will be integrating a chat feature for our application that will connect comp
 ### Example of CannaHire Job Posting Tracker
 
 ![Example of Job Posting Tracker CannaHire Site](./src/assets/job-post-tracker.png)
-
-### Example of CannaHire Saved Jobs
-
-![Example of Saved Jobs CannaHire Site](./public/images/bottom-app-pagr.png)
 
 ### Example of CannaHire Messages Page 
 
