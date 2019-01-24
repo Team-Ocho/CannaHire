@@ -86,12 +86,12 @@ class Sidebar extends Component {
               </li>
             </Link>
             <Link
-              to="/logout"
+              to="/"
               className={
-                window.location.pathname === "/logout" ? "nav-link active" : "nav-link"
+                window.location.pathname === "/" ? "nav-link active" : "nav-link"
               }
             > <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" onClick={this.logoutFunc} href="#about"><i className="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;&nbsp;</i>
+                <a className="nav-link js-scroll-trigger" onClick={this.logoutFunc} ><i className="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;&nbsp;</i>
                   Logout</a>
 
               </li>
