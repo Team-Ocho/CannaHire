@@ -78,12 +78,12 @@ We will be integrating a chat feature for our application that will connect comp
 
 ### Link to Video Walkthrough of CannaHire Site
 
-(Video walkthrough link will go here)
+https://drive.google.com/file/d/17-ap_KPbPurCcWqwTPuzSFUhjInDTOM1/view
   
 ### Link to Deployed CannaHire site on Heroku
 
-https://salty-fortress-40367.herokuapp.com/
-
+https://salty-fortress-40367.herokuapp.com/ (Applicant View)
+https://drive.google.com/file/d/1dKKsnESqWb_UrZWEex7Cik1mMUqPaKcl/view (Company View)
 
 ### Contributors to this Project (Team Ocho)
 * Alexandra Cole @Lexxiecole
