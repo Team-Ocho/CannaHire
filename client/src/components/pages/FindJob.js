@@ -19,6 +19,7 @@ search('test') // => true
 class FindJob extends Component {
   state = {
     query: '',
+    jobs: ""
   }
  
   
@@ -29,12 +30,12 @@ class FindJob extends Component {
     this.setState({
       [userSearchInput]: event.target.value
     })
-    for (var i = 0; i < JobResults.length; i++) {
+    for (var i = 0; i < this.state.jobs.length; i++) {
       var search = fuzzySearch(event.target.value)
-       if (search(jobs[i])) {
+       if (search(this.state.jobs[i])) {
     // add to list of options? magic
          }
-      fuzzySearch(event.target.value, jobs[i])
+      fuzzySearch(event.target.value, this.state.jobs[i])
     }
   }
 
